@@ -10,9 +10,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {}, //Coloca configurações de report de teste
+        plugin = {}, 
         features = "src/test/resources/features",
-        tags = {"~@ignore"}, //Roda tudo que é diferente de ignore
+        tags = {"~@ignore"}, 
         glue = {"steps"}
 )
 
