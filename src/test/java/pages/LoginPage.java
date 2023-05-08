@@ -4,8 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import support.Utils;
 
-import java.lang.reflect.Array;
-
 public class LoginPage extends Utils {
 
     WebDriver driver;
