@@ -12,7 +12,6 @@ public class ProductsPage extends Utils {
     WebDriver driver;
 
     Set<Integer> random;
-    Random rand = new Random();
     private By inventoryItemNameList = By.className("inventory_item_name");
     private By inventoryItemPriceList = By.className("inventory_item_price");
     private By inventoryItemButtonList = By.xpath("//div[2]/button[1]");
@@ -79,9 +78,10 @@ public class ProductsPage extends Utils {
             driver.findElement(By.xpath("(" + inventoryAddRemoveButtonXpath + ")[" + e + "]")).click();
         }
     }
+
     public void clickOnAddAllProductToCart() {
         int sum = getListSize(By.xpath(inventoryAddRemoveButtonXpath));
-        for (int i=1; i<=sum;i++) {
+        for (int i = 1; i <= sum; i++) {
             driver.findElement(By.xpath("(" + inventoryAddRemoveButtonXpath + ")[" + i + "]")).click();
         }
     }
@@ -92,36 +92,48 @@ public class ProductsPage extends Utils {
         Assert.assertEquals(expected, actual);
     }
 
-    public void removeButtonIsVisible (){
+    public void removeButtonIsVisible() {
         List<String> AddRemoveStatus = getList(inventoryItemButtonList);
-        for(String e: AddRemoveStatus){
-            if(e == "Remove"){
+        for (String e : AddRemoveStatus) {
+            if (e == "Remove") {
                 driver.findElement(By.xpath("(" + inventoryAddRemoveButtonXpath + ")[" + e + "]")).isDisplayed();
             }
         }
     }
 
-    public void clickOnRemoveToCart(){
+    public void clickOnRemoveToCart() {
         List<String> addRemoveStatus = getAddRemoveList();
-        int num=1;
-        for(String e: addRemoveStatus){
-            if(e.replace("\"", "").equals("Remove")){
+        int num = 1;
+        for (String e : addRemoveStatus) {
+            if (e.replace("\"", "").equals("Remove")) {
                 driver.findElement(By.xpath("(" + inventoryAddRemoveButtonXpath + ")[" + num + "]")).click();
             }
             num++;
         }
     }
 
-    public Integer getAmountCartNumber(){
-        String cartNum = driver.findElement(By.className("shopping_cart_badge")).getText();
-        if(cartNum == ""){
-            cartNum = "0";
+    public void clickOnRemoveSomeProductToCart() {
+        List<String> btn = getAddRemoveList();
+        int sumAddProd = Collections.frequency(btn, "Remove");
+        random = getRandomNumberList(sumAddProd);
+
+        for (Integer e : random) {
+            driver.findElement(By.xpath("(" + inventoryAddRemoveButtonXpath + ")[" + e + "]")).click();
         }
-//        int cartNum = Integer.parseInt(driver.findElement(cartIcon).getText());
-        return Integer.valueOf(cartNum);
     }
 
-    public List<String> getAddRemoveList(){
+    public Integer getAmountCartNumber() {
+        String a = driver.findElement(cartIcon).getText();
+        int cartNum;
+        if (a.isEmpty()) {
+            cartNum = 0;
+        } else {
+            cartNum = Integer.parseInt(a);
+        }
+        return cartNum;
+    }
+
+    public List<String> getAddRemoveList() {
         List<String> AddRemoveStatus = getList(inventoryItemButtonList);
         return AddRemoveStatus;
     }

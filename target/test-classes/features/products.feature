@@ -40,7 +40,7 @@ Feature: The user can be handle the displayed products
   @products-addAllCart
   Scenario: Add all products to cart
     Given User is logged in
-    When The user click to add All products to your cart
+    When The user click to add all products to your cart
     Then The user can see the current amount of products added in the cart icon
 
   @products-removeCart
@@ -60,36 +60,3 @@ Feature: The user can be handle the displayed products
     And The user can see the amount of products added in the cart icon
     When The user click to remove all products
     Then The user can see the current amount of products added in the cart icon
-
-  @products-info
-  Scenario: Information about the product
-    Given User is logged in
-    When The user want to see the product info
-    Then The user can see the product info
-
-  @products-moreInfo
-  Scenario: More information about the product
-    Given User is logged in
-    When The user click on some product
-    Then The user can see the product info
-
-  @products-info-addCart
-  Scenario: More information about the product
-    Given User is logged in
-    And The user click on some product
-    When The user click to add the product to your cart
-    Then The user can see the current amount of products added in the cart icon
-
-  @products-info-removeCart
-  Scenario: More information about the product
-    Given User is logged in
-    And The user click on some product
-    When The user click to remove the product
-    Then The user can see the current amount of products added in the cart icon
-
-  @products-info-backProductsPage
-  Scenario: Back to product page
-    Given User is logged in
-    And The user click on some product
-    When The user click to back the products page
-    Then The user can see the products page

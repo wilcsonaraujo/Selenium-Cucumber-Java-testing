@@ -99,11 +99,17 @@ public class Products_steps extends RunCucumberTest {
     }
 
     @When("^The user click to remove all products$")
-    public void the_user_click_to_remove_some_products() {
+    public void the_user_click_to_remove_all_products() {
         productsPage.clickOnRemoveToCart();
     }
-    @When("^The user click to add All products to your cart$")
+
+    @When("^The user click to add all products to your cart$")
     public void the_user_click_to_add_All_products_to_your_cart() {
         productsPage.clickOnAddAllProductToCart();
+    }
+
+    @When("^The user click to remove some products$")
+    public void the_user_click_to_remove_some_products() {
+        productsPage.clickOnRemoveSomeProductToCart();
     }
 }
