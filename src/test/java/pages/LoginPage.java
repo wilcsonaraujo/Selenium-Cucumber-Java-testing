@@ -1,5 +1,6 @@
 package pages;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import support.Utils;
@@ -10,6 +11,8 @@ public class LoginPage extends Utils {
     private By login_username_field = By.id("user-name");
     private By login_password_field = By.id("password");
     private By login_button = By.id("login-button");
+    private String messageErrorCssSelector = "h3[data-test='error']";
+    private String productsTitleXpath = "//span[@class='title']";
 
 
     public LoginPage(WebDriver driver) {
@@ -31,5 +34,15 @@ public class LoginPage extends Utils {
 
     public void clickLoginBottom() {
         driver.findElement(login_button).click();
+    }
+
+    public void validateLoginSuccess() {
+        String product = driver.findElement(By.xpath(productsTitleXpath)).getText();
+        Assert.assertEquals("Products", product);
+    }
+
+    public void verifyLoginMessageError(String messageError) {
+        String message = driver.findElement(By.cssSelector(messageErrorCssSelector)).getText();
+        Assert.assertEquals(message, messageError);
     }
 }
