@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 @CucumberOptions(
         plugin = {}, //Coloca configurações de report de teste
         features = "src/test/resources/features",
-        tags = {"~@ignore"}, //Roda tudo que é diferente de ignore
+        tags = {"@products-removeAllCart"}, //Roda tudo que é diferente de ignore ~@ignore
         glue = {"steps"}
 )
 
