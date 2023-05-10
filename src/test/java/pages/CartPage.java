@@ -3,12 +3,7 @@ package pages;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import runner.RunCucumberTest;
 import support.Utils;
-
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
 
 public class CartPage extends Utils {
 
@@ -22,6 +17,7 @@ public class CartPage extends Utils {
     private By cardList = By.className("cart_item");
     private By continueShoppingButton = By.id("continue-shopping");
     private String removeToCardButtonXpath = "(//button[contains(text(),'Remove')])";
+    private String checkoutButton = "(//button[contains(text(),'Checkout')])";
     private By cartIcon = By.id("shopping_cart_container");
 
     public Integer randomNumber;
@@ -36,6 +32,10 @@ public class CartPage extends Utils {
 
     public void removeProductFromCart() {
         driver.findElement(By.xpath(removeToCardButtonXpath + "[1]")).click();
+    }
+
+    public void clickOnCheckoutButton() {
+        driver.findElement(By.xpath(checkoutButton)).click();
     }
 
     public void removeProductsFromCart() {

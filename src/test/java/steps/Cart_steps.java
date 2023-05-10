@@ -40,4 +40,9 @@ public class Cart_steps extends RunCucumberTest {
         cartPage.clickOnContinueShopping();
     }
 
+    @When("^Click on checkout button$")
+    public void click_on_checkout_button() {
+        cartPage.clickOnCheckoutButton();
+    }
+
 }
