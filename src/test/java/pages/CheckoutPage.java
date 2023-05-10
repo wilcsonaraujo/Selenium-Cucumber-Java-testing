@@ -17,7 +17,7 @@ public class CheckoutPage extends Utils {
     private By lastName_field = By.id("last-name");
     private By postalCode_field = By.id("postal-code");
     private By cancelButton = By.id("cancel");
-    private String overviewTitleXpath = "//span[contains(text(),'Checkout: Overview')]";
+
 
 
     public void clickOnContinueButton() {
@@ -38,10 +38,6 @@ public class CheckoutPage extends Utils {
 
     public void clickOnCancelButton() {
         driver.findElement(cancelButton).click();
-    }
-
-    public void overviewDisplayed() {
-        driver.findElement(By.xpath(overviewTitleXpath)).isDisplayed();
     }
 
 }

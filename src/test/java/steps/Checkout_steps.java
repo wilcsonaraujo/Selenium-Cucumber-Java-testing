@@ -4,11 +4,12 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.CartPage;
 import pages.CheckoutPage;
+import pages.OverviewPage;
 import runner.RunCucumberTest;
 
 public class Checkout_steps extends RunCucumberTest {
     CheckoutPage checkoutPage = new CheckoutPage(driver);
-    CartPage cartPage = new CartPage(driver);
+    OverviewPage overviewPage = new OverviewPage(driver);
 
     private String[] userInfoArray = {"Hermione", "Granger", "32831"};
 
@@ -40,6 +41,6 @@ public class Checkout_steps extends RunCucumberTest {
 
     @Then("^User can see the purchase order$")
     public void user_can_see_the_purchase_order() {
-        checkoutPage.overviewDisplayed();
+        overviewPage.overviewDisplayed();
     }
 }

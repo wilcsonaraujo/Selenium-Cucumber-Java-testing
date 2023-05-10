@@ -18,7 +18,7 @@ public class ProductsPage extends Utils {
     private String inventoryAddRemoveButtonXpath = "//div[@class='inventory_list']//button";
     private By cartIcon = By.id("shopping_cart_container");
     private By sortedByOptions = By.className("product_sort_container");
-    private By inventoryItems = By.className("inventory_item");
+    private By inventoryItems = By.xpath("(//span[@class='title'])[1]");
 
 
     public ProductsPage(WebDriver driver) {
