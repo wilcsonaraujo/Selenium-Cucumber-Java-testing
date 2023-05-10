@@ -6,7 +6,7 @@ import runner.RunCucumberTest;
 
 public class Overview_steps extends RunCucumberTest {
 
-    OverviewPage overviewPage = new OverviewPage(driver);
+    OverviewPage overviewPage = new OverviewPage();
 
     @Then("^user can see the item total price$")
     public void user_can_see_the_item_total_price() {

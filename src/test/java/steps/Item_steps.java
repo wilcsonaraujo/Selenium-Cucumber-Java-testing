@@ -9,8 +9,8 @@ import runner.RunCucumberTest;
 
 public class Item_steps extends RunCucumberTest {
 
-    ItemPage itemPage = new ItemPage(driver);
-    ProductsPage productsPage = new ProductsPage(driver);
+    ItemPage itemPage = new ItemPage();
+    ProductsPage productsPage = new ProductsPage();
 
     private int randomItem;
     private String productName;

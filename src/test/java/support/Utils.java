@@ -1,6 +1,5 @@
 package support;
 
-import net.bytebuddy.utility.RandomString;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,25 +10,25 @@ import java.util.*;
 
 public class Utils extends RunCucumberTest {
 
-    public void waitElementBePresent(By element, Integer tempo) {
-        WebDriverWait wait = new WebDriverWait(driver, tempo);
+    public static void waitElementBePresent(By element, Integer tempo) {
+        WebDriverWait wait = new WebDriverWait(getDriver(), tempo);
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    public List<String> getList(By location) {
+    public static List<String> getList(By location) {
         List<String> elements = new ArrayList<>();
-        List<WebElement> data = driver.findElements(location);
+        List<WebElement> data = getDriver().findElements(location);
         for (WebElement e : data) {
             elements.add(e.getText());
         }
         return elements;
     }
 
-    public Integer getListSize(By location) {
-        return driver.findElements(location).size();
+    public static Integer getListSize(By location) {
+        return getDriver().findElements(location).size();
     }
 
-    public Set<Integer> getRandomNumberList(int size) {
+    public static Set<Integer> getRandomNumberList(int size) {
         Random random = new Random();
         int randomNum = random.nextInt(size);
         Set<Integer> randomNumbers = new HashSet<>();
@@ -39,7 +38,7 @@ public class Utils extends RunCucumberTest {
         return randomNumbers;
     }
 
-    public Integer getRandomNumber(int size) {
+    public static Integer getRandomNumber(int size) {
         Random random = new Random();
         return random.nextInt(size);
     }
