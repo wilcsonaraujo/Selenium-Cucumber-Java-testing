@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Products_steps extends RunCucumberTest {
 
-    ProductsPage productsPage = new ProductsPage(driver);
+    ProductsPage productsPage = new ProductsPage();
 
     String[] orderBy = {"Name (A to Z)", "Name (Z to A)", "Price (low to high)", "Price (high to low)"};
     List<String> productsNameList = new ArrayList<>();

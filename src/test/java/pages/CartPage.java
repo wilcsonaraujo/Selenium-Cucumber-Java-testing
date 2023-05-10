@@ -2,16 +2,11 @@ package pages;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import runner.RunCucumberTest;
 import support.Utils;
 
-public class CartPage extends Utils {
+public class CartPage extends RunCucumberTest {
 
-    WebDriver driver;
-
-    public CartPage(WebDriver driver) {
-        this.driver = driver;
-    }
 
     private By cartIconButton = By.className("shopping_cart_link");
     private By cardList = By.className("cart_item");
@@ -23,37 +18,32 @@ public class CartPage extends Utils {
     public Integer randomNumber;
 
     public void clickOnCartIcon() {
-        driver.findElement(cartIconButton).click();
-    }
-
-    public void cartListDisplayed() {
-        driver.findElement(cardList).isDisplayed();
+        getDriver().findElement(cartIconButton).click();
     }
 
     public void removeProductFromCart() {
-        driver.findElement(By.xpath(removeToCardButtonXpath + "[1]")).click();
+        getDriver().findElement(By.xpath(removeToCardButtonXpath + "[1]")).click();
     }
 
     public void clickOnCheckoutButton() {
-        driver.findElement(By.xpath(checkoutButton)).click();
+        getDriver().findElement(By.xpath(checkoutButton)).click();
     }
 
     public void removeProductsFromCart() {
-        int cartListSize = getListSize(cardList);
-        randomNumber = getRandomNumber(cartListSize);
+        int cartListSize = Utils.getListSize(cardList);
+        randomNumber = Utils.getRandomNumber(cartListSize);
         for (int i = 1; i <= randomNumber; i++) {
-            driver.findElement(By.xpath(removeToCardButtonXpath + "[" + i + "]")).click();
+            getDriver().findElement(By.xpath(removeToCardButtonXpath + "[" + i + "]")).click();
         }
     }
 
-    public void checkQuantityInCart() {
-        waitElementBePresent(continueShoppingButton, 5);
-        int expected = Integer.parseInt(driver.findElement(cartIcon).getText());
-        int actual = getListSize(cardList);
+    public void checkQuantityInCart(int expected) {
+        Utils.waitElementBePresent(continueShoppingButton, 5);
+        int actual = Utils.getListSize(cardList);
         Assert.assertEquals(expected, actual);
     }
 
     public void clickOnContinueShopping() {
-        driver.findElement(continueShoppingButton).click();
+        getDriver().findElement(continueShoppingButton).click();
     }
 }

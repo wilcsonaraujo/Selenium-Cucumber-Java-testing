@@ -8,8 +8,8 @@ import pages.OverviewPage;
 import runner.RunCucumberTest;
 
 public class Checkout_steps extends RunCucumberTest {
-    CheckoutPage checkoutPage = new CheckoutPage(driver);
-    OverviewPage overviewPage = new OverviewPage(driver);
+    CheckoutPage checkoutPage = new CheckoutPage();
+    OverviewPage overviewPage = new OverviewPage();
 
     private String[] userInfoArray = {"Hermione", "Granger", "32831"};
 

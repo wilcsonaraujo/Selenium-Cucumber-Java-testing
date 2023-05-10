@@ -2,18 +2,14 @@ package pages;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import runner.RunCucumberTest;
 import support.Utils;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-public class OverviewPage extends Utils {
-    WebDriver driver;
-
-    public OverviewPage(WebDriver driver) {
-        this.driver = driver;
-    }
+public class OverviewPage extends RunCucumberTest {
 
     private By finishButton = By.id("finish");
     private String cartListItemPriceXpath = "//div[@class='inventory_item_price']";
@@ -25,7 +21,7 @@ public class OverviewPage extends Utils {
 
 
     public void overviewDisplayed() {
-        driver.findElement(By.xpath(overviewTitleXpath)).isDisplayed();
+        getDriver().findElement(By.xpath(overviewTitleXpath)).isDisplayed();
     }
 
     public void checkItemTotal() {
@@ -34,7 +30,7 @@ public class OverviewPage extends Utils {
         for (Double e : itemPriceList) {
             sumItemPriceList += e.doubleValue();
         }
-        Double expected = Double.valueOf(driver.findElement(itemTotal_Label).getText().replace("Item total: $", ""));
+        Double expected = Double.valueOf(getDriver().findElement(itemTotal_Label).getText().replace("Item total: $", ""));
 
         Assert.assertEquals(expected, sumItemPriceList);
     }
@@ -45,23 +41,23 @@ public class OverviewPage extends Utils {
         for (Double e : itemPriceList) {
             sumItemPriceList += e.doubleValue();
         }
-        Double expected = Double.valueOf(driver.findElement(totalPrice_Label).getText().replace("Total: $", ""));
-        Double tax = Double.valueOf(driver.findElement(tax_Label).getText().replace("Tax: $", ""));
+        Double expected = Double.valueOf(getDriver().findElement(totalPrice_Label).getText().replace("Total: $", ""));
+        Double tax = Double.valueOf(getDriver().findElement(tax_Label).getText().replace("Tax: $", ""));
         Double actual = sumItemPriceList + tax;
         Assert.assertEquals(expected, actual);
     }
 
     public void finishOrder() {
-        driver.findElement(finishButton).click();
+        getDriver().findElement(finishButton).click();
     }
 
     public void verifySuccessMessage(String message) {
-        String successMessage = driver.findElement(successMessage_Label).getText();
+        String successMessage = getDriver().findElement(successMessage_Label).getText();
         Assert.assertEquals(successMessage, message);
     }
 
     public List<Double> getPriceItemList(String location) {
-        List<String> e = getList(By.xpath(location));
+        List<String> e = Utils.getList(By.xpath(location));
         List<Double> data = new ArrayList<>();
         for (String a : e) {
             data.add(Double.valueOf(a.toString().replace("$", "")));

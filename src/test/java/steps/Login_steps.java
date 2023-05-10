@@ -5,17 +5,19 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 import pages.LoginPage;
+import runner.RunBase;
 import runner.RunCucumberTest;
 
 public class Login_steps extends RunCucumberTest {
 
-    LoginPage loginPage = new LoginPage(driver);
+    LoginPage loginPage = new LoginPage();
 
     private String[] usernameArray = {"standard_user", "Cris_user"};
     private String[] passwordArray = {"secret_sauce", "secret_password"};
 
     @Given("^User is logged in$")
     public void user_is_logged_in() {
+        getDriver(RunBase.Browser.CHROME);
         loginPage.accessLoginPage();
         loginPage.fillUsername(usernameArray[0]);
         loginPage.fillPassword(passwordArray[0]);
@@ -24,6 +26,7 @@ public class Login_steps extends RunCucumberTest {
 
     @Given("^the user is on login page$")
     public void the_user_is_on_login_page() {
+        getDriver(RunBase.Browser.CHROME);
         loginPage.accessLoginPage();
     }
 

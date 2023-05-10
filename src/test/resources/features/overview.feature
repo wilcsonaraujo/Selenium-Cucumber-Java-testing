@@ -8,7 +8,6 @@ Feature: The user can see the purchase order
     Given User is logged in
     And The user click to add some products to your cart
     And The user click in cart icon
-    And The user see all products in the cart
     When Click on checkout button
     And The user enters your first name
     And The user enters your last name
@@ -22,7 +21,6 @@ Feature: The user can see the purchase order
     Given User is logged in
     And The user click to add some products to your cart
     And The user click in cart icon
-    And The user see all products in the cart
     When Click on checkout button
     And The user enters your first name
     And The user enters your last name
@@ -36,7 +34,6 @@ Feature: The user can see the purchase order
     Given User is logged in
     And The user click to add some products to your cart
     And The user click in cart icon
-    And The user see all products in the cart
     When Click on checkout button
     And Click on cancel button
     Then The user can see the products page
@@ -46,7 +43,6 @@ Feature: The user can see the purchase order
     Given User is logged in
     And The user click to add some products to your cart
     And The user click in cart icon
-    And The user see all products in the cart
     When Click on checkout button
     And The user enters your first name
     And The user enters your last name

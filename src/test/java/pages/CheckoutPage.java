@@ -1,16 +1,9 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import support.Utils;
+import runner.RunCucumberTest;
 
-public class CheckoutPage extends Utils {
-
-    WebDriver driver;
-
-    public CheckoutPage(WebDriver driver) {
-        this.driver = driver;
-    }
+public class CheckoutPage extends RunCucumberTest {
 
     private By continueButton = By.id("continue");
     private By firstName_field = By.id("first-name");
@@ -19,25 +12,24 @@ public class CheckoutPage extends Utils {
     private By cancelButton = By.id("cancel");
 
 
-
     public void clickOnContinueButton() {
-        driver.findElement(continueButton).click();
+        getDriver().findElement(continueButton).click();
     }
 
     public void fillFirstName(String username) {
-        driver.findElement(firstName_field).sendKeys(username);
+        getDriver().findElement(firstName_field).sendKeys(username);
     }
 
     public void fillLastName(String username) {
-        driver.findElement(lastName_field).sendKeys(username);
+        getDriver().findElement(lastName_field).sendKeys(username);
     }
 
     public void fillPostalCode(String username) {
-        driver.findElement(postalCode_field).sendKeys(username);
+        getDriver().findElement(postalCode_field).sendKeys(username);
     }
 
     public void clickOnCancelButton() {
-        driver.findElement(cancelButton).click();
+        getDriver().findElement(cancelButton).click();
     }
 
 }
