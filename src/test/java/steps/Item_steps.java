@@ -49,7 +49,7 @@ public class Item_steps extends RunCucumberTest {
         itemPage.clickOnBackToProducts();
     }
 
-    @Given("^the user click on add one product to cart$")
+    @Given("^The user click on add one product to cart$")
     public void the_user_click_on_add_one_product_to_cart() throws Throwable {
         randomItem = itemPage.getRandomItem();
         productsPage.clickOnAddToCart(randomItem);

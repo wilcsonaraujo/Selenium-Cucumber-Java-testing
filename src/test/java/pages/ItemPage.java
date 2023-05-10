@@ -28,6 +28,9 @@ public class ItemPage extends Utils {
     public Integer getRandomItem() {
         waitElementBePresent(inventoryContainer, 5);
         int randNumber = getRandomNumber(getListSize(By.xpath(inventoryItemNameXpath)));
+        if(randNumber == 0){
+            return 1;
+        }
         return randNumber;
     }
 
@@ -43,7 +46,6 @@ public class ItemPage extends Utils {
     }
 
     public void verifyItemInfoDisplayed() {
-        waitElementBePresent(By.xpath(addToCardButtonXpath), 5);
         Boolean actual = driver.findElement(By.className("inventory_details_name")).isDisplayed();
         Assert.assertEquals(true, actual);
     }
@@ -69,6 +71,5 @@ public class ItemPage extends Utils {
     public void clickOnBackToProducts() {
         driver.findElement(backToProductsButton).click();
     }
-
 
 }
