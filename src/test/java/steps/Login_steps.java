@@ -14,6 +14,14 @@ public class Login_steps extends RunCucumberTest {
     private String[] usernameArray = {"standard_user", "Cris_user"};
     private String[] passwordArray = {"secret_sauce", "secret_password"};
 
+    @Given("^User is logged in$")
+    public void user_is_logged_in() {
+        loginPage.accessLoginPage();
+        loginPage.fillUsername(usernameArray[0]);
+        loginPage.fillPassword(passwordArray[0]);
+        loginPage.clickLoginBottom();
+    }
+
     @Given("^the user is on login page$")
     public void the_user_is_on_login_page() {
         loginPage.accessLoginPage();

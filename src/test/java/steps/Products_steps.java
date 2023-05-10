@@ -3,7 +3,6 @@ package steps;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import pages.LoginPage;
 import pages.ProductsPage;
 import runner.RunCucumberTest;
 
@@ -13,20 +12,11 @@ import java.util.List;
 public class Products_steps extends RunCucumberTest {
 
     ProductsPage productsPage = new ProductsPage(driver);
-    LoginPage loginPage = new LoginPage(driver);
 
     String[] orderBy = {"Name (A to Z)", "Name (Z to A)", "Price (low to high)", "Price (high to low)"};
     List<String> productsNameList = new ArrayList<>();
     List<Double> productsPriceList = new ArrayList<>();
     Integer amountNumberCart = 0;
-
-    @Given("^User is logged in$")
-    public void user_is_logged_in() {
-        loginPage.accessLoginPage();
-        loginPage.fillUsername("standard_user");
-        loginPage.fillPassword("secret_sauce");
-        loginPage.clickLoginBottom();
-    }
 
     @Given("^The user can see the products page$")
     public void the_user_can_see_the_products_page() {
@@ -100,7 +90,7 @@ public class Products_steps extends RunCucumberTest {
 
     @When("^The user click to remove all products$")
     public void the_user_click_to_remove_all_products() {
-        productsPage.clickOnRemoveToCart();
+        productsPage.clickOnRemoveAllProductsToCart();
     }
 
     @When("^The user click to add all products to your cart$")

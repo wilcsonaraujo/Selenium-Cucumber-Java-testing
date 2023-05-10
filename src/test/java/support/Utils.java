@@ -39,4 +39,9 @@ public class Utils extends RunCucumberTest {
         return randomNumbers;
     }
 
+    public Integer getRandomNumber(int size) {
+        Random random = new Random();
+        return random.nextInt(size);
+    }
+
 }
