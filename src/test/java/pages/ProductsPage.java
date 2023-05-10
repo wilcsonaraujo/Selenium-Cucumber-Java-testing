@@ -18,7 +18,7 @@ public class ProductsPage extends Utils {
     private String inventoryAddRemoveButtonXpath = "//div[@class='inventory_list']//button";
     private By cartIcon = By.id("shopping_cart_container");
     private By sortedByOptions = By.className("product_sort_container");
-    private By inventoryContainer = By.id("inventory_container");
+    private By inventoryItems = By.className("inventory_item");
 
 
     public ProductsPage(WebDriver driver) {
@@ -26,7 +26,7 @@ public class ProductsPage extends Utils {
     }
 
     public void verifyInventory() {
-        driver.findElement(inventoryContainer).isDisplayed();
+        driver.findElement(inventoryItems).isDisplayed();
     }
 
     public void selectOrderBy(String order) {
@@ -101,7 +101,7 @@ public class ProductsPage extends Utils {
         }
     }
 
-    public void clickOnRemoveToCart() {
+    public void clickOnRemoveAllProductsToCart() {
         List<String> addRemoveStatus = getAddRemoveList();
         int num = 1;
         for (String e : addRemoveStatus) {
@@ -120,6 +120,10 @@ public class ProductsPage extends Utils {
         for (Integer e : random) {
             driver.findElement(By.xpath("(" + inventoryAddRemoveButtonXpath + ")[" + e + "]")).click();
         }
+    }
+
+    public void clickOnAddToCart(int item) {
+        driver.findElement(By.xpath("(" + inventoryAddRemoveButtonXpath + ")[" + item + "]")).click();
     }
 
     public Integer getAmountCartNumber() {
