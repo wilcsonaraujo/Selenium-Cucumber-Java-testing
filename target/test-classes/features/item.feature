@@ -24,7 +24,7 @@ Feature: The user can read more information of displayed products
   @item-info-removeAlreadyAddInProductsPage
   Scenario: Add product in inventory page and remove from info page
     Given User is logged in
-    And the user click on add one product to cart
+    And The user click on add one product to cart
     And The user click on the same product
     When The user click to remove the product
     Then The user can see the current amount of products added in the cart icon
