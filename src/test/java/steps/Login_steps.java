@@ -12,15 +12,13 @@ public class Login_steps extends RunCucumberTest {
 
     LoginPage loginPage = new LoginPage();
 
-    private String[] usernameArray = {"standard_user", "Cris_user"};
-    private String[] passwordArray = {"secret_sauce", "secret_password"};
 
     @Given("^User is logged in$")
     public void user_is_logged_in() {
         getDriver(RunBase.Browser.CHROME);
         loginPage.accessLoginPage();
-        loginPage.fillUsername(usernameArray[0]);
-        loginPage.fillPassword(passwordArray[0]);
+        loginPage.fillUsername("standard_user");
+        loginPage.fillPassword("secret_sauce");
         loginPage.clickLoginBottom();
     }
 
@@ -30,24 +28,23 @@ public class Login_steps extends RunCucumberTest {
         loginPage.accessLoginPage();
     }
 
-    @Given("^the user enters valid username$")
-    public void the_user_enters_valid_username() {
-        loginPage.fillUsername(usernameArray[0]);
+    @Given("^the user enters valid username \"([^\"]*)\"$")
+    public void the_user_enters_valid_username(String username) {loginPage.fillUsername(username);
     }
 
-    @Given("^the user enters valid password$")
-    public void the_user_enters_valid_password() {
-        loginPage.fillPassword(passwordArray[0]);
+    @Given("^the user enters valid password \"([^\"]*)\"$")
+    public void the_user_enters_valid_password(String password) {
+        loginPage.fillPassword(password);
     }
 
-    @Given("^the user enters invalid username$")
-    public void the_user_enters_invalid_username() {
-        loginPage.fillUsername(usernameArray[1]);
+    @Given("^the user enters invalid username \"([^\"]*)\"$")
+    public void the_user_enters_invalid_username(String username) {
+        loginPage.fillUsername(username);
     }
 
-    @Given("^the user enters invalid password$")
-    public void the_user_enters_invalid_password() {
-        loginPage.fillPassword(passwordArray[1]);
+    @Given("^the user enters invalid password \"([^\"]*)\"$")
+    public void the_user_enters_invalid_password(String password) {
+        loginPage.fillPassword(password);
     }
 
     @When("^click on login button$")

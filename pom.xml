@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>Curso</artifactId>
+  <artifactId>Selenium_Webdriver</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Curso</name>
+  <name>Selenium_Webdriver</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -17,14 +17,12 @@
   </properties>
 
   <dependencies>
-      <!-- CUCUMBER: PARA O JUNIT EXECUTAR-->
       <dependency>
         <groupId>info.cukes</groupId>
         <artifactId>cucumber-junit</artifactId>
         <version>1.2.5</version>
         <scope>test</scope>
       </dependency>
-      <!-- CUCUMBER: PARA INTERPRETAR O BDD-->
       <dependency>
         <groupId>info.cukes</groupId>
         <artifactId>cucumber-java</artifactId>
@@ -35,6 +33,21 @@
         <artifactId>selenium-java</artifactId>
         <version>3.141.59</version>
       </dependency>
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-plugin</artifactId>
+      <version>3.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.trivago.rta</groupId>
+      <artifactId>cluecumber-report-plugin</artifactId>
+      <version>1.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-plugin</artifactId>
+      <version>3.0.0-M5</version>
+    </dependency>
 
   </dependencies>
 
@@ -50,6 +63,40 @@
           <includes>
             <include>src/test/java</include>
           </includes>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.trivago.rta</groupId>
+        <artifactId>cluecumber-report-plugin</artifactId>
+        <version>1.2.0</version>
+        <executions>
+          <execution>
+            <id>report</id>
+            <phase>post-integration-test</phase>
+            <goals>
+              <goal>reporting</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <sourceJsonReportDirectory>${project.build.directory}/reports</sourceJsonReportDirectory>
+          <generatedHtmlReportDirectory>${project.build.directory}/reports</generatedHtmlReportDirectory>
+          <customParameters>
+            <Custom_Parameter>This is a test performed to apply my skills with Selenium</Custom_Parameter>
+            <Custom_URL>https://www.saucedemo.com/</Custom_URL>
+            <_Text>Report of tests performed on a site (Swag Labs) used for test automation practices.
+              The content is the result of scripts created in Selenium, using Cucumber and test scenarios in BDD, all created in the Java language.
+            </_Text>
+            <startPage>SCENARIO_SEQUENCE</startPage>
+          </customParameters>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <testFailureIgnore>true</testFailureIgnore>
         </configuration>
       </plugin>
     </plugins>

@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: runner.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 197, Failures: 0, Errors: 2, Skipped: 3, Time elapsed: 95.964 s <<< FAILURE! - in runner.RunCucumberTest
+Scenario: Remove some products to cart.When The user click to remove some products  Time elapsed: 0.009 s  <<< ERROR!
+java.lang.IllegalArgumentException: bound must be positive
+
+Scenario: Remove some products to cart  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.IllegalArgumentException: bound must be positive
+
