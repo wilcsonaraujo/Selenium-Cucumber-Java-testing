@@ -1,0 +1,511 @@
+<!doctype html>
+<!--
+    Copyright 2018 trivago N.V.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+    -->
+<html lang="en">
+ <head>
+  <base href="./..">  
+  <meta charset="utf-8"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <meta name="description" content="Cluecumber Report Plugin version 1.6.5 - Scenario Summary"> 
+  <meta name="author" content="Cluecumber Report Plugin version 1.6.5"> 
+  <title>Scenario Summary - 2023/05/11 17:13:59</title> 
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
+  <link rel="stylesheet" href="css/cluecumber.css" type="text/css"> 
+  <link rel="stylesheet" href="css/cluecumber_custom.css"> 
+  <link rel="stylesheet" href="css/datatables.min.css"> 
+  <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css"> 
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css"> 
+  <script src="js/jquery.min.js"></script> 
+  <script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/datatables.min.js"></script> 
+  <script src="js/jquery.fancybox.min.js"></script> 
+  <script src="js/Chart.bundle.min.js"></script> 
+  <script>
+    $(document).ready(function () {
+        // Data tables
+        $('.renderAsDataTable').on('draw.dt', function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        }).DataTable({
+            "oLanguage": {
+                "sSearch": "Search:"
+            },
+            "pageLength": 25
+        });
+
+        $('.collapse').on('shown.bs.collapse', function (e) {
+            $(e.target).find("iframe").each(function (index, iframe) {
+                resizeIframe(iframe);
+            })
+        });
+
+        // Lightbox
+        $("a.grouped_elements").fancybox();
+
+        // Tool tips
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // Chart
+            var canvas = document.getElementById('chart-area');
+            var ctx = canvas.getContext("2d");
+            var chart = new Chart(ctx, eval({
+  "data": {
+    "labels": [
+      "passed",
+      "failed",
+      "skipped"
+    ],
+    "datasets": [
+      {
+        "data": [
+          28,
+          1,
+          0
+        ],
+        "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(255, 193, 7, 1.000)"
+        ]
+      }
+    ]
+  },
+  "type": "pie"
+}));
+
+            var original;
+            switch (chart.config.type) {
+                case "pie":
+                    original = Chart.defaults.pie.legend.onClick;
+                    break;
+                default:
+                    original = Chart.defaults.global.legend.onClick;
+                    break;
+            }
+
+            chart.options.legend.onClick = function (evt, label) {
+                original.call(this, evt, label);
+
+                var card = $("#card_" + label.text);
+                label.hidden ? card.show() : card.hide();
+
+                var row = $(".row_" + label.text);
+                label.hidden ? row.show() : row.hide();
+            };
+    })
+
+    function resizeIframe(iframe) {
+        iframe.style.height = (iframe.contentWindow.document.body.scrollHeight + 25) + 'px';
+    }
+</script> 
+ </head> 
+ <body> 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
+   <span class="navbar-brand">Scenario Summary</span> 
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
+   <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+    <ul class="navbar-nav mr-auto"> 
+     <li class="nav-item"> <a class="nav-link" href="pages/feature-summary.html">All Features</a> </li> 
+     <li class="nav-item"> <a class="nav-link" href="pages/tag-summary.html">All Tags</a> </li> 
+     <li class="nav-item"> <a class="nav-link" href="index.html">All Scenarios</a> </li> 
+    </ul> 
+    <span class="text-light">2023/05/11 17:13:59</span> 
+   </div> 
+  </nav> 
+  <main role="main" class="container"> 
+   <div class="cluecumber-template"> 
+    <div class="pb-2 mt-4 mb-2 border-bottom"> 
+     <h3>Scenario Sequence</h3> 
+    </div> 
+    <div class="row"> 
+     <div class="col-sm-12  h-auto"> 
+      <div class="card h-100"> 
+       <div class="card-body"> 
+        <table class="table table-fit"> 
+         <tbody> 
+          <tr> 
+           <td class="text-left text-nowrap"><strong>Custom Parameter:</strong></td> 
+           <td class="text-left wrap"> This is a test performed to apply my skills with Selenium </td> 
+          </tr> 
+          <tr> 
+           <td class="text-left text-nowrap"><strong>Custom URL:</strong></td> 
+           <td class="text-left wrap"> <a href="https://www.saucedemo.com/" target="_blank">https://www.saucedemo.com/</a> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-left text-nowrap"><strong> Text:</strong></td> 
+           <td class="text-left wrap"> Report of tests performed on a site (Swag Labs) used for test automation practices. The content is the result of scripts created in Selenium, using Cucumber and test scenarios in BDD, all created in the Java language. </td> 
+          </tr> 
+          <tr> 
+           <td class="text-left text-nowrap"><strong>startPage:</strong></td> 
+           <td class="text-left wrap"> SCENARIO_SEQUENCE </td> 
+          </tr> 
+         </tbody> 
+        </table> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="row"> 
+     <div class="col-sm-8  h-auto"> 
+      <div class="card h-100"> 
+       <div class="card-header">
+        Scenario Result Chart
+       </div> 
+       <div class="card-body"> 
+        <div id="canvas-holder" class="w-100 text-center"> 
+         <canvas id="chart-area" class="w-100"></canvas> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="col-sm-4  h-auto"> 
+      <div class="card h-100"> 
+       <div class="card-header">
+        Scenario Summary
+       </div> 
+       <div class="card-body"> 
+        <ul class="list-group list-group-flush"> 
+         <li class="list-group-item"> 29 Scenario(s):<br> 28 <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> 1 <i class="text-danger cluecumber-icon icon-failed" data-toggle="tooltip" title="failed"></i> 0 <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"></i> </li> 
+         <li class="list-group-item">Duration: 1m 33s 451ms</li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="row" id="card_all"> 
+     <div class="col-sm-12"> 
+      <div class="card"> 
+       <div class="card-header border-light bg-info text-white">
+        Scenario Sequence
+       </div> 
+       <div class="card-body"> 
+        <table id="results_all" class="table table-hover renderAsDataTable"> 
+         <thead> 
+          <tr> 
+           <th class="text-left">#</th> 
+           <th class="text-left">Feature</th> 
+           <th class="text-left">Scenario</th> 
+           <th>Duration</th> 
+           <th class="text-left">Status</th> 
+          </tr> 
+         </thead> 
+         <tbody> 
+          <tr> 
+           <td class="text-right">1</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="1-login_user.feature"><a href="pages/feature-scenarios/feature_0.html">User login</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_1.html" style="word-break: break-all">Login success</a> </td> 
+           <td class="text-right small" data-order="3.343.607.600"> 
+            <nobr>
+             0m 03s 343ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">2</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="1-login_user.feature"><a href="pages/feature-scenarios/feature_0.html">User login</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_2.html" style="word-break: break-all">Login with user info empty</a> </td> 
+           <td class="text-right small" data-order="2.639.121.400"> 
+            <nobr>
+             0m 02s 639ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">3</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="1-login_user.feature"><a href="pages/feature-scenarios/feature_0.html">User login</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_3.html" style="word-break: break-all">Login with username empty</a> </td> 
+           <td class="text-right small" data-order="2.566.887.600"> 
+            <nobr>
+             0m 02s 566ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">4</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="1-login_user.feature"><a href="pages/feature-scenarios/feature_0.html">User login</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_4.html" style="word-break: break-all">Login with password empty</a> </td> 
+           <td class="text-right small" data-order="2.648.336.800"> 
+            <nobr>
+             0m 02s 648ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">5</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="1-login_user.feature"><a href="pages/feature-scenarios/feature_0.html">User login</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_5.html" style="word-break: break-all">Login with invalid user info</a> </td> 
+           <td class="text-right small" data-order="2.740.361.800"> 
+            <nobr>
+             0m 02s 740ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">6</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="2-products.feature"><a href="pages/feature-scenarios/feature_1.html">The user can be handle the displayed products</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_6.html" style="word-break: break-all">order display of products</a> </td> 
+           <td class="text-right small" data-order="3.133.651.200"> 
+            <nobr>
+             0m 03s 133ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">7</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="2-products.feature"><a href="pages/feature-scenarios/feature_1.html">The user can be handle the displayed products</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_7.html" style="word-break: break-all">order display of products</a> </td> 
+           <td class="text-right small" data-order="3.073.447.000"> 
+            <nobr>
+             0m 03s 073ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">8</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="2-products.feature"><a href="pages/feature-scenarios/feature_1.html">The user can be handle the displayed products</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_8.html" style="word-break: break-all">order display of products</a> </td> 
+           <td class="text-right small" data-order="3.120.042.900"> 
+            <nobr>
+             0m 03s 120ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">9</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="2-products.feature"><a href="pages/feature-scenarios/feature_1.html">The user can be handle the displayed products</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_9.html" style="word-break: break-all">order display of products</a> </td> 
+           <td class="text-right small" data-order="3.087.654.300"> 
+            <nobr>
+             0m 03s 087ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">10</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="2-products.feature"><a href="pages/feature-scenarios/feature_1.html">The user can be handle the displayed products</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_10.html" style="word-break: break-all">Add products to cart</a> </td> 
+           <td class="text-right small" data-order="3.065.366.900"> 
+            <nobr>
+             0m 03s 065ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">11</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="2-products.feature"><a href="pages/feature-scenarios/feature_1.html">The user can be handle the displayed products</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_11.html" style="word-break: break-all">Add all products to cart</a> </td> 
+           <td class="text-right small" data-order="3.294.821.600"> 
+            <nobr>
+             0m 03s 294ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">12</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="2-products.feature"><a href="pages/feature-scenarios/feature_1.html">The user can be handle the displayed products</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_12.html" style="word-break: break-all">Remove some products to cart</a> </td> 
+           <td class="text-right small" data-order="3.142.341.700"> 
+            <nobr>
+             0m 03s 142ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">13</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="2-products.feature"><a href="pages/feature-scenarios/feature_1.html">The user can be handle the displayed products</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_13.html" style="word-break: break-all">Remove All products to cart</a> </td> 
+           <td class="text-right small" data-order="3.053.232.600"> 
+            <nobr>
+             0m 03s 053ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">14</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="3-item.feature"><a href="pages/feature-scenarios/feature_2.html">The user can read more information of displayed products</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_14.html" style="word-break: break-all">More information about the product</a> </td> 
+           <td class="text-right small" data-order="3.126.517.100"> 
+            <nobr>
+             0m 03s 126ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">15</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="3-item.feature"><a href="pages/feature-scenarios/feature_2.html">The user can read more information of displayed products</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_15.html" style="word-break: break-all">Add product to a cart</a> </td> 
+           <td class="text-right small" data-order="3.370.707.700"> 
+            <nobr>
+             0m 03s 370ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">16</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="3-item.feature"><a href="pages/feature-scenarios/feature_2.html">The user can read more information of displayed products</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_16.html" style="word-break: break-all">Add product in inventory page and remove from info page</a> </td> 
+           <td class="text-right small" data-order="3.101.005.500"> 
+            <nobr>
+             0m 03s 101ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">17</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="3-item.feature"><a href="pages/feature-scenarios/feature_2.html">The user can read more information of displayed products</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_17.html" style="word-break: break-all">Back to product page</a> </td> 
+           <td class="text-right small" data-order="3.021.831.500"> 
+            <nobr>
+             0m 03s 021ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">18</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="4-cart.feature"><a href="pages/feature-scenarios/feature_3.html">The user can view shopping cart</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_18.html" style="word-break: break-all">User can remove a product from cart</a> </td> 
+           <td class="text-right small" data-order="2.994.930.100"> 
+            <nobr>
+             0m 02s 994ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">19</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="4-cart.feature"><a href="pages/feature-scenarios/feature_3.html">The user can view shopping cart</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_19.html" style="word-break: break-all">User can remove some products from cart</a> </td> 
+           <td class="text-right small" data-order="3.345.713.900"> 
+            <nobr>
+             0m 03s 345ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">20</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="4-cart.feature"><a href="pages/feature-scenarios/feature_3.html">The user can view shopping cart</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_20.html" style="word-break: break-all">User can continue the shopping</a> </td> 
+           <td class="text-right small" data-order="4.205.437.200"> 
+            <nobr>
+             0m 04s 205ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">21</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="5-checkout.feature"><a href="pages/feature-scenarios/feature_4.html">The user can buy the products</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_21.html" style="word-break: break-all">Input user info</a> </td> 
+           <td class="text-right small" data-order="3.405.316.800"> 
+            <nobr>
+             0m 03s 405ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">22</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="5-checkout.feature"><a href="pages/feature-scenarios/feature_4.html">The user can buy the products</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_22.html" style="word-break: break-all">User info empty - First Name</a> </td> 
+           <td class="text-right small" data-order="2.882.585.000"> 
+            <nobr>
+             0m 02s 882ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">23</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="5-checkout.feature"><a href="pages/feature-scenarios/feature_4.html">The user can buy the products</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_23.html" style="word-break: break-all">User info empty - Last Name</a> </td> 
+           <td class="text-right small" data-order="3.418.525.500"> 
+            <nobr>
+             0m 03s 418ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">24</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="5-checkout.feature"><a href="pages/feature-scenarios/feature_4.html">The user can buy the products</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_24.html" style="word-break: break-all">User info empty - Zip Postal</a> </td> 
+           <td class="text-right small" data-order="3.548.369.400"> 
+            <nobr>
+             0m 03s 548ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">25</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="5-checkout.feature"><a href="pages/feature-scenarios/feature_4.html">The user can buy the products</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_25.html" style="word-break: break-all">User can cancel order</a> </td> 
+           <td class="text-right small" data-order="3.309.241.700"> 
+            <nobr>
+             0m 03s 309ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-danger cluecumber-icon icon-failed" data-toggle="tooltip" title="failed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">26</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="6-overview.feature"><a href="pages/feature-scenarios/feature_5.html">The user can see the purchase order</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_26.html" style="word-break: break-all">The user can see items total price</a> </td> 
+           <td class="text-right small" data-order="3.692.920.500"> 
+            <nobr>
+             0m 03s 692ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">27</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="6-overview.feature"><a href="pages/feature-scenarios/feature_5.html">The user can see the purchase order</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_27.html" style="word-break: break-all">The user can see items total price</a> </td> 
+           <td class="text-right small" data-order="4.005.930.300"> 
+            <nobr>
+             0m 04s 005ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">28</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="6-overview.feature"><a href="pages/feature-scenarios/feature_5.html">The user can see the purchase order</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_28.html" style="word-break: break-all">User can cancel order</a> </td> 
+           <td class="text-right small" data-order="3.293.161.100"> 
+            <nobr>
+             0m 03s 293ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+          <tr> 
+           <td class="text-right">29</td> 
+           <td class="text-left"><span data-toggle="tooltip" title="6-overview.feature"><a href="pages/feature-scenarios/feature_5.html">The user can see the purchase order</a></span> </td> 
+           <td class="text-left"> <a href="pages/scenario-detail/scenario_29.html" style="word-break: break-all">The user can finish the order</a> </td> 
+           <td class="text-right small" data-order="3.820.572.800"> 
+            <nobr>
+             0m 03s 820ms
+            </nobr> </td> 
+           <td class="text-center"> <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> </td> 
+          </tr> 
+         </tbody> 
+        </table> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </main> 
+  <footer class="footer navbar-dark bg-dark"> 
+   <div class="container-fluid"> 
+    <span>Cluecumber Report Plugin version 1.6.5 - 2023/05/11 17:13:59.</span> 
+   </div> 
+  </footer>   
+ </body>
+</html>
