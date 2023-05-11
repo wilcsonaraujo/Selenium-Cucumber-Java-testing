@@ -79,8 +79,8 @@
           </execution>
         </executions>
         <configuration>
-          <sourceJsonReportDirectory>${project.build.directory}/reports</sourceJsonReportDirectory>
-          <generatedHtmlReportDirectory>${project.build.directory}/reports</generatedHtmlReportDirectory>
+          <sourceJsonReportDirectory>${project.build.directory}/cucumber-reports</sourceJsonReportDirectory>
+          <generatedHtmlReportDirectory>${project.build.directory}/trivago-reports</generatedHtmlReportDirectory>
           <customParameters>
             <Custom_Parameter>This is a test performed to apply my skills with Selenium</Custom_Parameter>
             <Custom_URL>https://www.saucedemo.com/</Custom_URL>
@@ -96,7 +96,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M5</version>
         <configuration>
-          <testFailureIgnore>true</testFailureIgnore>
+          <testFailureIgnore>false</testFailureIgnore>
         </configuration>
       </plugin>
     </plugins>

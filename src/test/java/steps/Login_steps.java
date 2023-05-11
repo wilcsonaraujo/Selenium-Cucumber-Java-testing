@@ -12,15 +12,23 @@ public class Login_steps extends RunCucumberTest {
 
     LoginPage loginPage = new LoginPage();
 
-
-    @Given("^User is logged in$")
-    public void user_is_logged_in() {
+    @Given("^User is logged in \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void user_is_logged_in_e(String username, String password) {
         getDriver(RunBase.Browser.CHROME);
         loginPage.accessLoginPage();
-        loginPage.fillUsername("standard_user");
-        loginPage.fillPassword("secret_sauce");
+        loginPage.fillUsername(username);
+        loginPage.fillPassword(password);
         loginPage.clickLoginBottom();
     }
+
+//    @Given("^User is logged in$")
+//    public void user_is_logged_in() {
+//        getDriver(RunBase.Browser.CHROME);
+//        loginPage.accessLoginPage();
+//        loginPage.fillUsername("standard_user");
+//        loginPage.fillPassword("secret_sauce");
+//        loginPage.clickLoginBottom();
+//    }
 
     @Given("^the user is on login page$")
     public void the_user_is_on_login_page() {

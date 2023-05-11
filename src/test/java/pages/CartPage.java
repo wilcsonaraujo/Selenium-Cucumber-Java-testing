@@ -13,7 +13,6 @@ public class CartPage extends RunCucumberTest {
     private By continueShoppingButton = By.id("continue-shopping");
     private String removeToCardButtonXpath = "(//button[contains(text(),'Remove')])";
     private String checkoutButton = "(//button[contains(text(),'Checkout')])";
-    private By cartIcon = By.id("shopping_cart_container");
 
     public Integer randomNumber;
 
@@ -32,7 +31,7 @@ public class CartPage extends RunCucumberTest {
     public void removeProductsFromCart() {
         int cartListSize = Utils.getListSize(cardList);
         randomNumber = Utils.getRandomNumber(cartListSize);
-        for (int i = 1; i <= randomNumber; i++) {
+        for (int i = randomNumber; i > randomNumber; i--) {
             getDriver().findElement(By.xpath(removeToCardButtonXpath + "[" + i + "]")).click();
         }
     }

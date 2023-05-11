@@ -1,0 +1,2926 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: en"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Login success",
+        "description": "",
+        "id": "user-login;login-success",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2813857100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is on login page",
+            "match": {
+              "location": "Login_steps.the_user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 89081200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user enters valid username \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 32
+                }
+              ],
+              "location": "Login_steps.the_user_enters_valid_username(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74433800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user enters valid password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret_sauce",
+                  "offset": 32
+                }
+              ],
+              "location": "Login_steps.the_user_enters_valid_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 156788100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click on login button",
+            "match": {
+              "location": "Login_steps.click_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51256100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user should be redirected to the products page",
+            "match": {
+              "location": "Login_steps.the_user_should_be_redirected_to_the_products_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@login-success"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Login with user info empty",
+        "description": "",
+        "id": "user-login;login-with-user-info-empty",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2383172800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user is on login page",
+            "match": {
+              "location": "Login_steps.the_user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 108249100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "click on login button",
+            "match": {
+              "location": "Login_steps.click_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44678100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user should get error message \"Epic sadface: Username is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Username is required",
+                  "offset": 31
+                }
+              ],
+              "location": "Login_steps.user_should_get_error_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@login-empty"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Login with username empty",
+        "description": "",
+        "id": "user-login;login-with-username-empty",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2420939800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user is on login page",
+            "match": {
+              "location": "Login_steps.the_user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 109204000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the user enters valid password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret_sauce",
+                  "offset": 32
+                }
+              ],
+              "location": "Login_steps.the_user_enters_valid_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83767700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "click on login button",
+            "match": {
+              "location": "Login_steps.click_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36640000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user should get error message \"Epic sadface: Username is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Username is required",
+                  "offset": 31
+                }
+              ],
+              "location": "Login_steps.user_should_get_error_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@login-username-empty"
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "Login with password empty",
+        "description": "",
+        "id": "user-login;login-with-password-empty",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2416984200,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the user is on login page",
+            "match": {
+              "location": "Login_steps.the_user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 117648000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "the user enters valid username \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 32
+                }
+              ],
+              "location": "Login_steps.the_user_enters_valid_username(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75152800,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "click on login button",
+            "match": {
+              "location": "Login_steps.click_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34332500,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user should get error message \"Epic sadface: Password is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Password is required",
+                  "offset": 31
+                }
+              ],
+              "location": "Login_steps.user_should_get_error_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 28,
+            "name": "@login-password-empty"
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "Login with invalid user info",
+        "description": "",
+        "id": "user-login;login-with-invalid-user-info",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2536184300,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the user is on login page",
+            "match": {
+              "location": "Login_steps.the_user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 94200700,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the user enters invalid username \"Cris_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cris_user",
+                  "offset": 34
+                }
+              ],
+              "location": "Login_steps.the_user_enters_invalid_username(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 102418200,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "the user enters invalid password \"secret_password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret_password",
+                  "offset": 34
+                }
+              ],
+              "location": "Login_steps.the_user_enters_invalid_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99324000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "click on login button",
+            "match": {
+              "location": "Login_steps.click_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52963300,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user should get error message \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Username and password do not match any user in this service",
+                  "offset": 31
+                }
+              ],
+              "location": "Login_steps.user_should_get_error_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 35,
+            "name": "@login-invalid"
+          }
+        ]
+      }
+    ],
+    "name": "User login",
+    "description": "",
+    "id": "user-login",
+    "keyword": "Feature",
+    "uri": "1-login_user.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@login"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: en"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 7,
+        "name": "order display of products",
+        "description": "",
+        "id": "the-user-can-be-handle-the-displayed-products;order-display-of-products",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2767670300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 72896300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user can see the products page",
+            "match": {
+              "location": "Products_steps.the_user_can_see_the_products_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 198625400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user click to sort products by Name ascending",
+            "match": {
+              "location": "Products_steps.the_user_click_to_sort_products_by_Name_ascending()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76163200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "See the products sorted name ascending",
+            "match": {
+              "location": "Products_steps.see_the_products_sorted_name_ascending()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@products-orderNameAsc"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "order display of products",
+        "description": "",
+        "id": "the-user-can-be-handle-the-displayed-products;order-display-of-products",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2741050400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 51197100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "The user can see the products page",
+            "match": {
+              "location": "Products_steps.the_user_can_see_the_products_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 208724400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The user click to sort products by Name descending",
+            "match": {
+              "location": "Products_steps.the_user_click_to_sort_products_by_Name_descending()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 92421400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "See the products sorted name descending",
+            "match": {
+              "location": "Products_steps.see_the_products_sorted_name_descending()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@products-orderNameDesc"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "order display of products",
+        "description": "",
+        "id": "the-user-can-be-handle-the-displayed-products;order-display-of-products",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2859134400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 58972800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "The user can see the products page",
+            "match": {
+              "location": "Products_steps.the_user_can_see_the_products_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 245210900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "The user click to sort products by Price ascending",
+            "match": {
+              "location": "Products_steps.the_user_click_to_sort_products_by_Price_ascending()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 83388800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "See the products sorted price ascending",
+            "match": {
+              "location": "Products_steps.see_the_products_sorted_price_ascending()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@products-orderPriceAsc"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "order display of products",
+        "description": "",
+        "id": "the-user-can-be-handle-the-displayed-products;order-display-of-products",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2712110600,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 61008200,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "The user can see the products page",
+            "match": {
+              "location": "Products_steps.the_user_can_see_the_products_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 218159300,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "The user click to sort products by Price descending",
+            "match": {
+              "location": "Products_steps.the_user_click_to_sort_products_by_Price_descending()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 93792100,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "See the products sorted price descending",
+            "match": {
+              "location": "Products_steps.see_the_products_sorted_price_descending()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 27,
+            "name": "@products-orderPriceDesc"
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "Add products to cart",
+        "description": "",
+        "id": "the-user-can-be-handle-the-displayed-products;add-products-to-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2891608200,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 25839200,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "The user click to add some products to your cart",
+            "match": {
+              "location": "Products_steps.the_user_click_to_add_some_products_to_your_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 146660100,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "The user can see the current amount of products added in the cart icon",
+            "match": {
+              "location": "Products_steps.the_user_can_see_the_current_amount_of_products_added_in_the_cart_icon()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 34,
+            "name": "@products-addCart"
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "Add all products to cart",
+        "description": "",
+        "id": "the-user-can-be-handle-the-displayed-products;add-all-products-to-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2701444100,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 533248300,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "The user click to add all products to your cart",
+            "match": {
+              "location": "Products_steps.the_user_click_to_add_All_products_to_your_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 122389200,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "The user can see the current amount of products added in the cart icon",
+            "match": {
+              "location": "Products_steps.the_user_can_see_the_current_amount_of_products_added_in_the_cart_icon()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 40,
+            "name": "@products-addAllCart"
+          }
+        ]
+      },
+      {
+        "line": 47,
+        "name": "Remove some products to cart",
+        "description": "",
+        "id": "the-user-can-be-handle-the-displayed-products;remove-some-products-to-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2759775600,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 108096400,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "The user click to add some products to your cart",
+            "match": {
+              "location": "Products_steps.the_user_click_to_add_some_products_to_your_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91182000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "The user can see the button to remove the added product",
+            "match": {
+              "location": "Products_steps.the_user_can_see_the_button_to_remove_the_added_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27831000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "The user can see the amount of products added in the cart icon",
+            "match": {
+              "location": "Products_steps.the_user_can_see_the_amount_of_products_added_in_the_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88519300,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "The user click to remove some products",
+            "match": {
+              "location": "Products_steps.the_user_click_to_remove_some_products()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 119058300,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "The user can see the current amount of products added in the cart icon",
+            "match": {
+              "location": "Products_steps.the_user_can_see_the_current_amount_of_products_added_in_the_cart_icon()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 46,
+            "name": "@products-removeCart"
+          }
+        ]
+      },
+      {
+        "line": 56,
+        "name": "Remove All products to cart",
+        "description": "",
+        "id": "the-user-can-be-handle-the-displayed-products;remove-all-products-to-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2749678000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 89705200,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "The user click to add some products to your cart",
+            "match": {
+              "location": "Products_steps.the_user_click_to_add_some_products_to_your_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 95714000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "The user can see the button to remove the added product",
+            "match": {
+              "location": "Products_steps.the_user_can_see_the_button_to_remove_the_added_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39252800,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "The user can see the amount of products added in the cart icon",
+            "match": {
+              "location": "Products_steps.the_user_can_see_the_amount_of_products_added_in_the_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 145050200,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "The user click to remove all products",
+            "match": {
+              "location": "Products_steps.the_user_click_to_remove_all_products()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 109143300,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "The user can see the current amount of products added in the cart icon",
+            "match": {
+              "location": "Products_steps.the_user_can_see_the_current_amount_of_products_added_in_the_cart_icon()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 55,
+            "name": "@products-removeAllCart"
+          }
+        ]
+      }
+    ],
+    "name": "The user can be handle the displayed products",
+    "description": "",
+    "id": "the-user-can-be-handle-the-displayed-products",
+    "keyword": "Feature",
+    "uri": "2-products.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@products"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: en"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 7,
+        "name": "More information about the product",
+        "description": "",
+        "id": "the-user-can-read-more-information-of-displayed-products;more-information-about-the-product",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2751352100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 231125900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user click on some product",
+            "match": {
+              "location": "Item_steps.the_user_click_on_some_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52367100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user can see the product info",
+            "match": {
+              "location": "Item_steps.the_user_can_see_the_product_info()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 21649300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "check the product name",
+            "match": {
+              "location": "Item_steps.check_the_product_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32105800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "check the product price",
+            "match": {
+              "location": "Item_steps.check_the_product_price()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@item-Info"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Add product to a cart",
+        "description": "",
+        "id": "the-user-can-read-more-information-of-displayed-products;add-product-to-a-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2772158100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 237004800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The user click on some product",
+            "match": {
+              "location": "Item_steps.the_user_click_on_some_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71048900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "The user click to add the product to your cart",
+            "match": {
+              "location": "Item_steps.the_user_click_to_add_the_product_to_your_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76054600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The user click to back the products page",
+            "match": {
+              "location": "Item_steps.the_user_click_to_back_the_products_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49124400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "The user can see the products page",
+            "match": {
+              "location": "Products_steps.the_user_can_see_the_products_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 132642000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "The user can see the current amount of products added in the cart icon",
+            "match": {
+              "location": "Products_steps.the_user_can_see_the_current_amount_of_products_added_in_the_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135827600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The user click to remove all products",
+            "match": {
+              "location": "Products_steps.the_user_click_to_remove_all_products()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@item-info-addCartAndBackToProductsPage"
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Add product in inventory page and remove from info page",
+        "description": "",
+        "id": "the-user-can-read-more-information-of-displayed-products;add-product-in-inventory-page-and-remove-from-info-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2826208800,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 159032000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "The user click on add one product to cart",
+            "match": {
+              "location": "Item_steps.the_user_click_on_add_one_product_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77727300,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "The user click on the same product",
+            "match": {
+              "location": "Item_steps.the_user_click_on_the_same_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64416100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "The user click to remove the product",
+            "match": {
+              "location": "Item_steps.the_user_click_to_remove_the_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62978900,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "The user can see the current amount of products added in the cart icon",
+            "match": {
+              "location": "Products_steps.the_user_can_see_the_current_amount_of_products_added_in_the_cart_icon()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 24,
+            "name": "@item-info-removeAlreadyAddInProductsPage"
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "Back to product page",
+        "description": "",
+        "id": "the-user-can-read-more-information-of-displayed-products;back-to-product-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2848797500,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 242029700,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "The user click on some product",
+            "match": {
+              "location": "Item_steps.the_user_click_on_some_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 100471700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "The user click to back the products page",
+            "match": {
+              "location": "Item_steps.the_user_click_to_back_the_products_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50943700,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "The user can see the products page",
+            "match": {
+              "location": "Products_steps.the_user_can_see_the_products_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@item-info-backProductsPage"
+          }
+        ]
+      }
+    ],
+    "name": "The user can read more information of displayed products",
+    "description": "",
+    "id": "the-user-can-read-more-information-of-displayed-products",
+    "keyword": "Feature",
+    "uri": "3-item.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@item"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: en"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 7,
+        "name": "User can remove a product from cart",
+        "description": "",
+        "id": "the-user-can-view-shopping-cart;user-can-remove-a-product-from-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2847592300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 153598500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user click to add some products to your cart",
+            "match": {
+              "location": "Products_steps.the_user_click_to_add_some_products_to_your_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92193700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user click in cart icon",
+            "match": {
+              "location": "Cart_steps.the_user_click_in_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65672900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user remove one product from cart",
+            "match": {
+              "location": "Cart_steps.the_user_remove_one_product_from_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 178367700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The user can see the current amount of products in the cart",
+            "match": {
+              "location": "Cart_steps.the_user_can_see_the_current_amount_of_products_in_the_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@cart-removeProductToCart"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "User can remove some products from cart",
+        "description": "",
+        "id": "the-user-can-view-shopping-cart;user-can-remove-some-products-from-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2713120900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 469557400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The user click to add all products to your cart",
+            "match": {
+              "location": "Products_steps.the_user_click_to_add_All_products_to_your_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 102909200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "The user click in cart icon",
+            "match": {
+              "location": "Cart_steps.the_user_click_in_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30756600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The user remove some product from cart",
+            "match": {
+              "location": "Cart_steps.the_user_remove_some_product_from_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 134125400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "The user can see the current amount of products in the cart",
+            "match": {
+              "location": "Cart_steps.the_user_can_see_the_current_amount_of_products_in_the_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@cart-removeSomeProductsToCart"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "User can continue the shopping",
+        "description": "",
+        "id": "the-user-can-view-shopping-cart;user-can-continue-the-shopping",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2734581300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 495998200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "The user click to add all products to your cart",
+            "match": {
+              "location": "Products_steps.the_user_click_to_add_All_products_to_your_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 107866800,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "The user click in cart icon",
+            "match": {
+              "location": "Cart_steps.the_user_click_in_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117959700,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User click on continue shopping",
+            "match": {
+              "location": "Cart_steps.user_click_on_continue_shopping()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 529612600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "The user click to remove all products",
+            "match": {
+              "location": "Products_steps.the_user_click_to_remove_all_products()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 278967000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "The user click to add some products to your cart",
+            "match": {
+              "location": "Products_steps.the_user_click_to_add_some_products_to_your_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73837000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "The user click in cart icon",
+            "match": {
+              "location": "Cart_steps.the_user_click_in_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115958700,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "The user can see the current amount of products in the cart",
+            "match": {
+              "location": "Cart_steps.the_user_can_see_the_current_amount_of_products_in_the_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@cart-continueShopping"
+          }
+        ]
+      }
+    ],
+    "name": "The user can view shopping cart",
+    "description": "",
+    "id": "the-user-can-view-shopping-cart",
+    "keyword": "Feature",
+    "uri": "4-cart.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@cart"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: en"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Input user info",
+        "description": "",
+        "id": "the-user-can-buy-the-products;input-user-info",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2833330700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 85026200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user click to add some products to your cart",
+            "match": {
+              "location": "Products_steps.the_user_click_to_add_some_products_to_your_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91418600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user click in cart icon",
+            "match": {
+              "location": "Cart_steps.the_user_click_in_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78868500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click on checkout button",
+            "match": {
+              "location": "Cart_steps.click_on_checkout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 117838100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The user enters your first name",
+            "match": {
+              "location": "Checkout_steps.the_user_enters_your_first_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 128667100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The user enters your last name",
+            "match": {
+              "location": "Checkout_steps.the_user_enters_your_last_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 93471300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "The user enters your postal code",
+            "match": {
+              "location": "Checkout_steps.the_user_enters_your_postal_code()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 100164100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Click on continue button",
+            "match": {
+              "location": "Checkout_steps.click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54493300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User can see the purchase order",
+            "match": {
+              "location": "Checkout_steps.user_can_see_the_purchase_order()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@checkout-addUserInfo"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "User info empty - First Name",
+        "description": "",
+        "id": "the-user-can-buy-the-products;user-info-empty---first-name",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2785096200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22634800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "The user click to add some products to your cart",
+            "match": {
+              "location": "Products_steps.the_user_click_to_add_some_products_to_your_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77536900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The user click in cart icon",
+            "match": {
+              "location": "Cart_steps.the_user_click_in_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78421800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click on checkout button",
+            "match": {
+              "location": "Cart_steps.click_on_checkout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 85682000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Click on continue button",
+            "match": {
+              "location": "Checkout_steps.click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45663900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user should get error message \"Error: First Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Error: First Name is required",
+                  "offset": 31
+                }
+              ],
+              "location": "Login_steps.user_should_get_error_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@checkout-continueFirstNameEmpty"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "User info empty - Last Name",
+        "description": "",
+        "id": "the-user-can-buy-the-products;user-info-empty---last-name",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2784106500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 163503100,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "The user click to add some products to your cart",
+            "match": {
+              "location": "Products_steps.the_user_click_to_add_some_products_to_your_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83413300,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "The user click in cart icon",
+            "match": {
+              "location": "Cart_steps.the_user_click_in_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64808000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Click on checkout button",
+            "match": {
+              "location": "Cart_steps.click_on_checkout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 104543800,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "The user enters your first name",
+            "match": {
+              "location": "Checkout_steps.the_user_enters_your_first_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94070300,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Click on continue button",
+            "match": {
+              "location": "Checkout_steps.click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31770000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user should get error message \"Error: Last Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Error: Last Name is required",
+                  "offset": 31
+                }
+              ],
+              "location": "Login_steps.user_should_get_error_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 27,
+            "name": "@checkout-continueLastNameEmpty"
+          }
+        ]
+      },
+      {
+        "line": 38,
+        "name": "User info empty - Zip Postal",
+        "description": "",
+        "id": "the-user-can-buy-the-products;user-info-empty---zip-postal",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2783855900,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 264023100,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "The user click to add some products to your cart",
+            "match": {
+              "location": "Products_steps.the_user_click_to_add_some_products_to_your_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83555400,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "The user click in cart icon",
+            "match": {
+              "location": "Cart_steps.the_user_click_in_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98926200,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Click on checkout button",
+            "match": {
+              "location": "Cart_steps.click_on_checkout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 105064900,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "The user enters your first name",
+            "match": {
+              "location": "Checkout_steps.the_user_enters_your_first_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91925700,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "The user enters your last name",
+            "match": {
+              "location": "Checkout_steps.the_user_enters_your_last_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83122200,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Click on continue button",
+            "match": {
+              "location": "Checkout_steps.click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39936500,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user should get error message \"Error: Postal Code is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Error: Postal Code is required",
+                  "offset": 31
+                }
+              ],
+              "location": "Login_steps.user_should_get_error_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 37,
+            "name": "@checkout-continueZipEmpty"
+          }
+        ]
+      },
+      {
+        "line": 49,
+        "name": "User can cancel order",
+        "description": "",
+        "id": "the-user-can-buy-the-products;user-can-cancel-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2745120000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 241659200,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "The user click to add some products to your cart",
+            "match": {
+              "location": "Products_steps.the_user_click_to_add_some_products_to_your_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80656800,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "The user click in cart icon",
+            "match": {
+              "location": "Cart_steps.the_user_click_in_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70103200,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Click on checkout button",
+            "match": {
+              "location": "Cart_steps.click_on_checkout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76591400,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "Click on cancel button",
+            "match": {
+              "location": "Checkout_steps.click_on_cancel_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49777100,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "The user see all products in the cart",
+            "match": {
+              "location": "Checkout_steps.The_user_see_all_products_in_the_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 48,
+            "name": "@checkout-cancel"
+          }
+        ]
+      }
+    ],
+    "name": "The user can buy the products",
+    "description": "",
+    "id": "the-user-can-buy-the-products",
+    "keyword": "Feature",
+    "uri": "5-checkout.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@checkout"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: en"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 7,
+        "name": "The user can see items total price",
+        "description": "",
+        "id": "the-user-can-see-the-purchase-order;the-user-can-see-items-total-price",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2729201700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 252248400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user click to add some products to your cart",
+            "match": {
+              "location": "Products_steps.the_user_click_to_add_some_products_to_your_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69918200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user click in cart icon",
+            "match": {
+              "location": "Cart_steps.the_user_click_in_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 100257600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click on checkout button",
+            "match": {
+              "location": "Cart_steps.click_on_checkout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 104055300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The user enters your first name",
+            "match": {
+              "location": "Checkout_steps.the_user_enters_your_first_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 95718600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The user enters your last name",
+            "match": {
+              "location": "Checkout_steps.the_user_enters_your_last_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84881000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "The user enters your postal code",
+            "match": {
+              "location": "Checkout_steps.the_user_enters_your_postal_code()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98372500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Click on continue button",
+            "match": {
+              "location": "Checkout_steps.click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57837900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User can see the purchase order",
+            "match": {
+              "location": "Checkout_steps.user_can_see_the_purchase_order()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83001200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user can see the item total price",
+            "match": {
+              "location": "Overview_steps.user_can_see_the_item_total_price()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@overview-itemTotal"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "The user can see items total price",
+        "description": "",
+        "id": "the-user-can-see-the-purchase-order;the-user-can-see-items-total-price",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2673621300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 99079000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The user click to add some products to your cart",
+            "match": {
+              "location": "Products_steps.the_user_click_to_add_some_products_to_your_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61873200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "The user click in cart icon",
+            "match": {
+              "location": "Cart_steps.the_user_click_in_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80160700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Click on checkout button",
+            "match": {
+              "location": "Cart_steps.click_on_checkout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 107667600,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "The user enters your first name",
+            "match": {
+              "location": "Checkout_steps.the_user_enters_your_first_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 120740500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "The user enters your last name",
+            "match": {
+              "location": "Checkout_steps.the_user_enters_your_last_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82251000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "The user enters your postal code",
+            "match": {
+              "location": "Checkout_steps.the_user_enters_your_postal_code()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69986900,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Click on continue button",
+            "match": {
+              "location": "Checkout_steps.click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60016800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User can see the purchase order",
+            "match": {
+              "location": "Checkout_steps.user_can_see_the_purchase_order()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 133158500,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user can see the total price",
+            "match": {
+              "location": "Overview_steps.user_can_see_the_total_price()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@overview-totalPrice"
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "User can cancel order",
+        "description": "",
+        "id": "the-user-can-see-the-purchase-order;user-can-cancel-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2731913700,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 218464100,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "The user click to add some products to your cart",
+            "match": {
+              "location": "Products_steps.the_user_click_to_add_some_products_to_your_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70869700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "The user click in cart icon",
+            "match": {
+              "location": "Cart_steps.the_user_click_in_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80852000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Click on checkout button",
+            "match": {
+              "location": "Cart_steps.click_on_checkout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 107772700,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Click on cancel button",
+            "match": {
+              "location": "Checkout_steps.click_on_cancel_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64867200,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "The user can see the products page",
+            "match": {
+              "location": "Products_steps.the_user_can_see_the_products_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@overview-cancel"
+          }
+        ]
+      },
+      {
+        "line": 42,
+        "name": "The user can finish the order",
+        "description": "",
+        "id": "the-user-can-see-the-purchase-order;the-user-can-finish-the-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2728064300,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User is logged in \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 19
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 39
+                }
+              ],
+              "location": "Login_steps.user_is_logged_in_e(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 199984500,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "The user click to add some products to your cart",
+            "match": {
+              "location": "Products_steps.the_user_click_to_add_some_products_to_your_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74042700,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "The user click in cart icon",
+            "match": {
+              "location": "Cart_steps.the_user_click_in_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105233400,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Click on checkout button",
+            "match": {
+              "location": "Cart_steps.click_on_checkout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 118818700,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "The user enters your first name",
+            "match": {
+              "location": "Checkout_steps.the_user_enters_your_first_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124542100,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "The user enters your last name",
+            "match": {
+              "location": "Checkout_steps.the_user_enters_your_last_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87809000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "The user enters your postal code",
+            "match": {
+              "location": "Checkout_steps.the_user_enters_your_postal_code()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96706500,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "Click on continue button",
+            "match": {
+              "location": "Checkout_steps.click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51762300,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "User can see the purchase order",
+            "match": {
+              "location": "Checkout_steps.user_can_see_the_purchase_order()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 101083000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "User can finished your order",
+            "match": {
+              "location": "Overview_steps.user_can_finished_your_order()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 46022600,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "user should get success message \"Thank you for your order!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Thank you for your order!",
+                  "offset": 33
+                }
+              ],
+              "location": "Overview_steps.user_should_get_success_message(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 41,
+            "name": "@overview-finish"
+          }
+        ]
+      }
+    ],
+    "name": "The user can see the purchase order",
+    "description": "",
+    "id": "the-user-can-see-the-purchase-order",
+    "keyword": "Feature",
+    "uri": "6-overview.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@overview"
+      }
+    ]
+  }
+]

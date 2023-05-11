@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runner.RunCucumberTest" time="95.964" tests="197" errors="2" skipped="3" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runner.RunCucumberTest" time="95.812" tests="196" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_351\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\wilcs\AppData\Local\Temp\surefire2598263171760899141\surefirebooter7729213824316244145.jar C:\Users\wilcs\AppData\Local\Temp\surefire2598263171760899141 2023-05-11T16-46-55_170-jvmRun1 surefire5633676574841658201tmp surefire_02082790593805214174tmp"/>
+    <property name="sun.java.command" value="C:\Users\wilcs\AppData\Local\Temp\surefire4164034945982433627\surefirebooter7431950867298631492.jar C:\Users\wilcs\AppData\Local\Temp\surefire4164034945982433627 2023-05-11T20-18-32_163-jvmRun1 surefire3527327061048103618tmp surefire_04014136472368387082tmp"/>
     <property name="test" value="RunCucumberTest"/>
     <property name="surefire.test.class.path" value="C:\Selenium_webdriver_test\target\test-classes;C:\Selenium_webdriver_test\target\classes;C:\Users\wilcs\.m2\repository\info\cukes\cucumber-junit\1.2.5\cucumber-junit-1.2.5.jar;C:\Users\wilcs\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\wilcs\.m2\repository\info\cukes\cucumber-html\0.2.3\cucumber-html-0.2.3.jar;C:\Users\wilcs\.m2\repository\info\cukes\cucumber-jvm-deps\1.0.5\cucumber-jvm-deps-1.0.5.jar;C:\Users\wilcs\.m2\repository\info\cukes\gherkin\2.12.2\gherkin-2.12.2.jar;C:\Users\wilcs\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\wilcs\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\wilcs\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\wilcs\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\wilcs\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\wilcs\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\wilcs\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\wilcs\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\wilcs\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\wilcs\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\wilcs\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\wilcs\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\wilcs\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\wilcs\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\wilcs\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\wilcs\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\wilcs\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\wilcs\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\wilcs\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\wilcs\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\wilcs\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\wilcs\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\wilcs\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\plugins\maven-surefire-plugin\3.0.0-M5\maven-surefire-plugin-3.0.0-M5.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\surefire\maven-surefire-common\3.0.0-M5\maven-surefire-common-3.0.0-M5.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\surefire\surefire-api\3.0.0-M5\surefire-api-3.0.0-M5.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.0.0-M5\surefire-logger-api-3.0.0-M5.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\surefire\surefire-extensions-api\3.0.0-M5\surefire-extensions-api-3.0.0-M5.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\surefire\surefire-booter\3.0.0-M5\surefire-booter-3.0.0-M5.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.0.0-M5\surefire-extensions-spi-3.0.0-M5.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\maven-toolchain\3.0-alpha-2\maven-toolchain-3.0-alpha-2.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\shared\maven-artifact-transfer\0.11.0\maven-artifact-transfer-0.11.0.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.0.1\maven-common-artifact-filters-3.0.1.jar;C:\Users\wilcs\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\wilcs\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\wilcs\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\wilcs\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\wilcs\.m2\repository\org\codehaus\plexus\plexus-java\1.0.5\plexus-java-1.0.5.jar;C:\Users\wilcs\.m2\repository\org\ow2\asm\asm\7.2\asm-7.2.jar;C:\Users\wilcs\.m2\repository\com\thoughtworks\qdox\qdox\2.0-M9\qdox-2.0-M9.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.0.0-M4\surefire-shared-utils-3.0.0-M4.jar;C:\Users\wilcs\.m2\repository\com\trivago\rta\cluecumber-report-plugin\1.2.0\cluecumber-report-plugin-1.2.0.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\maven-plugin-api\3.5.2\maven-plugin-api-3.5.2.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\maven-model\3.5.2\maven-model-3.5.2.jar;C:\Users\wilcs\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\maven-artifact\3.5.2\maven-artifact-3.5.2.jar;C:\Users\wilcs\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.plexus\0.3.3\org.eclipse.sisu.plexus-0.3.3.jar;C:\Users\wilcs\.m2\repository\javax\enterprise\cdi-api\1.0\cdi-api-1.0.jar;C:\Users\wilcs\.m2\repository\javax\annotation\jsr250-api\1.0\jsr250-api-1.0.jar;C:\Users\wilcs\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.inject\0.3.3\org.eclipse.sisu.inject-0.3.3.jar;C:\Users\wilcs\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.5.2\plexus-classworlds-2.5.2.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\maven-compat\3.5.2\maven-compat-3.5.2.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\maven-model-builder\3.5.2\maven-model-builder-3.5.2.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\maven-builder-support\3.5.2\maven-builder-support-3.5.2.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\maven-settings\3.5.2\maven-settings-3.5.2.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\maven-settings-builder\3.5.2\maven-settings-builder-3.5.2.jar;C:\Users\wilcs\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.4\plexus-sec-dispatcher-1.4.jar;C:\Users\wilcs\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\maven-core\3.5.2\maven-core-3.5.2.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\resolver\maven-resolver-spi\1.1.0\maven-resolver-spi-1.1.0.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.1.0\maven-shared-utils-3.1.0.jar;C:\Users\wilcs\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\wilcs\.m2\repository\com\google\inject\guice\4.0\guice-4.0-no_aop.jar;C:\Users\wilcs\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\wilcs\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\maven-resolver-provider\3.5.2\maven-resolver-provider-3.5.2.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\maven-repository-metadata\3.5.2\maven-repository-metadata-3.5.2.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\resolver\maven-resolver-api\1.1.0\maven-resolver-api-1.1.0.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\resolver\maven-resolver-util\1.1.0\maven-resolver-util-1.1.0.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\resolver\maven-resolver-impl\1.1.0\maven-resolver-impl-1.1.0.jar;C:\Users\wilcs\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.24\plexus-interpolation-1.24.jar;C:\Users\wilcs\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.7.1\plexus-component-annotations-1.7.1.jar;C:\Users\wilcs\.m2\repository\org\apache\maven\wagon\wagon-provider-api\2.12\wagon-provider-api-2.12.jar;C:\Users\wilcs\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\wilcs\.m2\repository\io\gsonfire\gson-fire\1.8.3\gson-fire-1.8.3.jar;C:\Users\wilcs\.m2\repository\org\freemarker\freemarker\2.3.28\freemarker-2.3.28.jar;C:\Users\wilcs\.m2\repository\org\codehaus\plexus\plexus-utils\3.1.0\plexus-utils-3.1.0.jar;C:\Users\wilcs\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\wilcs\.m2\repository\uk\com\robust-it\cloning\1.9.10\cloning-1.9.10.jar;C:\Users\wilcs\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\wilcs\AppData\Local\Temp\surefire2598263171760899141\surefirebooter7729213824316244145.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\wilcs\AppData\Local\Temp\surefire4164034945982433627\surefirebooter7431950867298631492.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_351\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_351\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_351\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_351\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_351\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_351\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_351\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -62,12 +62,241 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="Given User is logged in" classname="Scenario: User can remove a product from cart" time="0.001">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 15940
+  <testcase name="Given the user is on login page" classname="Scenario: Login success" time="0.001">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 6255
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mai 11, 2023 4:46:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+mai 11, 2023 8:18:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="And the user enters valid username &quot;standard_user&quot;" classname="Scenario: Login success" time="0"/>
+  <testcase name="And the user enters valid password &quot;secret_sauce&quot;" classname="Scenario: Login success" time="0"/>
+  <testcase name="When click on login button" classname="Scenario: Login success" time="0"/>
+  <testcase name="Then the user should be redirected to the products page" classname="Scenario: Login success" time="0"/>
+  <testcase name="" classname="Scenario: Login success" time="0.001"/>
+  <testcase name="Given the user is on login page" classname="Scenario: Login with user info empty" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 23232
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 11, 2023 8:18:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="When click on login button" classname="Scenario: Login with user info empty" time="0"/>
+  <testcase name="Then user should get error message &quot;Epic sadface: Username is required&quot;" classname="Scenario: Login with user info empty" time="0"/>
+  <testcase name="" classname="Scenario: Login with user info empty" time="0.001"/>
+  <testcase name="Given the user is on login page" classname="Scenario: Login with username empty" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 29102
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 11, 2023 8:18:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="And the user enters valid password &quot;secret_sauce&quot;" classname="Scenario: Login with username empty" time="0"/>
+  <testcase name="When click on login button" classname="Scenario: Login with username empty" time="0"/>
+  <testcase name="Then user should get error message &quot;Epic sadface: Username is required&quot;" classname="Scenario: Login with username empty" time="0"/>
+  <testcase name="" classname="Scenario: Login with username empty" time="0.001"/>
+  <testcase name="Given the user is on login page" classname="Scenario: Login with password empty" time="0.001">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 39311
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 11, 2023 8:18:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="And the user enters valid username &quot;standard_user&quot;" classname="Scenario: Login with password empty" time="0"/>
+  <testcase name="When click on login button" classname="Scenario: Login with password empty" time="0"/>
+  <testcase name="Then user should get error message &quot;Epic sadface: Password is required&quot;" classname="Scenario: Login with password empty" time="0"/>
+  <testcase name="" classname="Scenario: Login with password empty" time="0"/>
+  <testcase name="Given the user is on login page" classname="Scenario: Login with invalid user info" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 18381
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 11, 2023 8:18:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="And the user enters invalid username &quot;Cris_user&quot;" classname="Scenario: Login with invalid user info" time="0"/>
+  <testcase name="And the user enters invalid password &quot;secret_password&quot;" classname="Scenario: Login with invalid user info" time="0"/>
+  <testcase name="When click on login button" classname="Scenario: Login with invalid user info" time="0"/>
+  <testcase name="Then user should get error message &quot;Epic sadface: Username and password do not match any user in this service&quot;" classname="Scenario: Login with invalid user info" time="0"/>
+  <testcase name="" classname="Scenario: Login with invalid user info" time="0"/>
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: order display of products" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 23619
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 11, 2023 8:18:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: order display of products" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 48651
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 11, 2023 8:18:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: order display of products" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 45800
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 11, 2023 8:18:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: order display of products" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 2480
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 11, 2023 8:18:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="And The user can see the products page" classname="Scenario: order display of products" time="0"/>
+  <testcase name="And The user can see the products page" classname="Scenario: order display of products" time="0"/>
+  <testcase name="And The user can see the products page" classname="Scenario: order display of products" time="0"/>
+  <testcase name="And The user can see the products page" classname="Scenario: order display of products" time="0"/>
+  <testcase name="When The user click to sort products by Name ascending" classname="Scenario: order display of products" time="0"/>
+  <testcase name="Then See the products sorted name ascending" classname="Scenario: order display of products" time="0"/>
+  <testcase name="" classname="Scenario: order display of products" time="0"/>
+  <testcase name="" classname="Scenario: order display of products" time="0"/>
+  <testcase name="" classname="Scenario: order display of products" time="0.001"/>
+  <testcase name="" classname="Scenario: order display of products" time="0"/>
+  <testcase name="When The user click to sort products by Name descending" classname="Scenario: order display of products" time="0"/>
+  <testcase name="Then See the products sorted name descending" classname="Scenario: order display of products" time="0"/>
+  <testcase name="When The user click to sort products by Price ascending" classname="Scenario: order display of products" time="0"/>
+  <testcase name="Then See the products sorted price ascending" classname="Scenario: order display of products" time="0"/>
+  <testcase name="When The user click to sort products by Price descending" classname="Scenario: order display of products" time="0"/>
+  <testcase name="Then See the products sorted price descending" classname="Scenario: order display of products" time="0"/>
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: Add products to cart" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 4710
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 11, 2023 8:19:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="When The user click to add some products to your cart" classname="Scenario: Add products to cart" time="0"/>
+  <testcase name="Then The user can see the current amount of products added in the cart icon" classname="Scenario: Add products to cart" time="0"/>
+  <testcase name="" classname="Scenario: Add products to cart" time="0"/>
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: Add all products to cart" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 32230
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 11, 2023 8:19:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="When The user click to add all products to your cart" classname="Scenario: Add all products to cart" time="0.001"/>
+  <testcase name="Then The user can see the current amount of products added in the cart icon" classname="Scenario: Add all products to cart" time="0"/>
+  <testcase name="" classname="Scenario: Add all products to cart" time="0"/>
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: Remove some products to cart" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 30651
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 11, 2023 8:19:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="And The user click to add some products to your cart" classname="Scenario: Remove some products to cart" time="0"/>
+  <testcase name="And The user can see the button to remove the added product" classname="Scenario: Remove some products to cart" time="0"/>
+  <testcase name="And The user can see the amount of products added in the cart icon" classname="Scenario: Remove some products to cart" time="0"/>
+  <testcase name="When The user click to remove some products" classname="Scenario: Remove some products to cart" time="0"/>
+  <testcase name="Then The user can see the current amount of products added in the cart icon" classname="Scenario: Remove some products to cart" time="0"/>
+  <testcase name="" classname="Scenario: Remove some products to cart" time="0.001"/>
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: Remove All products to cart" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 1074
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 11, 2023 8:19:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="And The user click to add some products to your cart" classname="Scenario: Remove All products to cart" time="0"/>
+  <testcase name="And The user can see the button to remove the added product" classname="Scenario: Remove All products to cart" time="0"/>
+  <testcase name="And The user can see the amount of products added in the cart icon" classname="Scenario: Remove All products to cart" time="0"/>
+  <testcase name="When The user click to remove all products" classname="Scenario: Remove All products to cart" time="0"/>
+  <testcase name="Then The user can see the current amount of products added in the cart icon" classname="Scenario: Remove All products to cart" time="0"/>
+  <testcase name="" classname="Scenario: Remove All products to cart" time="0"/>
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: More information about the product" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 6687
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 11, 2023 8:19:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="When The user click on some product" classname="Scenario: More information about the product" time="0"/>
+  <testcase name="Then The user can see the product info" classname="Scenario: More information about the product" time="0"/>
+  <testcase name="And check the product name" classname="Scenario: More information about the product" time="0"/>
+  <testcase name="And check the product price" classname="Scenario: More information about the product" time="0"/>
+  <testcase name="" classname="Scenario: More information about the product" time="0"/>
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: Add product to a cart" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 18782
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 11, 2023 8:19:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="And The user click on some product" classname="Scenario: Add product to a cart" time="0"/>
+  <testcase name="When The user click to add the product to your cart" classname="Scenario: Add product to a cart" time="0"/>
+  <testcase name="And The user click to back the products page" classname="Scenario: Add product to a cart" time="0"/>
+  <testcase name="Then The user can see the products page" classname="Scenario: Add product to a cart" time="0"/>
+  <testcase name="And The user can see the current amount of products added in the cart icon" classname="Scenario: Add product to a cart" time="0"/>
+  <testcase name="And The user click to remove all products" classname="Scenario: Add product to a cart" time="0"/>
+  <testcase name="" classname="Scenario: Add product to a cart" time="0"/>
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: Add product in inventory page and remove from info page" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 20173
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 11, 2023 8:19:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="And The user click on add one product to cart" classname="Scenario: Add product in inventory page and remove from info page" time="0"/>
+  <testcase name="And The user click on the same product" classname="Scenario: Add product in inventory page and remove from info page" time="0"/>
+  <testcase name="When The user click to remove the product" classname="Scenario: Add product in inventory page and remove from info page" time="0"/>
+  <testcase name="Then The user can see the current amount of products added in the cart icon" classname="Scenario: Add product in inventory page and remove from info page" time="0"/>
+  <testcase name="" classname="Scenario: Add product in inventory page and remove from info page" time="0"/>
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: Back to product page" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 44330
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 11, 2023 8:19:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="And The user click on some product" classname="Scenario: Back to product page" time="0.001"/>
+  <testcase name="When The user click to back the products page" classname="Scenario: Back to product page" time="0"/>
+  <testcase name="Then The user can see the products page" classname="Scenario: Back to product page" time="0"/>
+  <testcase name="" classname="Scenario: Back to product page" time="0"/>
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: User can remove a product from cart" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 27196
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 11, 2023 8:19:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
 ]]></system-err>
   </testcase>
@@ -76,12 +305,12 @@ INFORMAÇÕES: Detected dialect: W3C
   <testcase name="When The user remove one product from cart" classname="Scenario: User can remove a product from cart" time="0"/>
   <testcase name="Then The user can see the current amount of products in the cart" classname="Scenario: User can remove a product from cart" time="0"/>
   <testcase name="" classname="Scenario: User can remove a product from cart" time="0"/>
-  <testcase name="Given User is logged in" classname="Scenario: User can remove some products from cart" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 4455
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: User can remove some products from cart" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 45706
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mai 11, 2023 4:47:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+mai 11, 2023 8:19:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
 ]]></system-err>
   </testcase>
@@ -90,12 +319,12 @@ INFORMAÇÕES: Detected dialect: W3C
   <testcase name="When The user remove some product from cart" classname="Scenario: User can remove some products from cart" time="0"/>
   <testcase name="Then The user can see the current amount of products in the cart" classname="Scenario: User can remove some products from cart" time="0"/>
   <testcase name="" classname="Scenario: User can remove some products from cart" time="0"/>
-  <testcase name="Given User is logged in" classname="Scenario: User can continue the shopping" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 32726
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: User can continue the shopping" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 8600
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mai 11, 2023 4:47:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+mai 11, 2023 8:19:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
 ]]></system-err>
   </testcase>
@@ -104,15 +333,15 @@ INFORMAÇÕES: Detected dialect: W3C
   <testcase name="And The user click in cart icon" classname="Scenario: User can continue the shopping" time="0"/>
   <testcase name="When User click on continue shopping" classname="Scenario: User can continue the shopping" time="0"/>
   <testcase name="And The user click to remove all products" classname="Scenario: User can continue the shopping" time="0"/>
-  <testcase name="And The user click to add some products to your cart" classname="Scenario: User can continue the shopping" time="0.001"/>
+  <testcase name="And The user click to add some products to your cart" classname="Scenario: User can continue the shopping" time="0"/>
   <testcase name="Then The user can see the current amount of products in the cart" classname="Scenario: User can continue the shopping" time="0"/>
   <testcase name="" classname="Scenario: User can continue the shopping" time="0"/>
-  <testcase name="Given User is logged in" classname="Scenario: Input user info" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 25428
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: Input user info" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 30419
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mai 11, 2023 4:47:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+mai 11, 2023 8:19:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
 ]]></system-err>
   </testcase>
@@ -125,12 +354,12 @@ INFORMAÇÕES: Detected dialect: W3C
   <testcase name="And Click on continue button" classname="Scenario: Input user info" time="0"/>
   <testcase name="Then User can see the purchase order" classname="Scenario: Input user info" time="0"/>
   <testcase name="" classname="Scenario: Input user info" time="0"/>
-  <testcase name="Given User is logged in" classname="Scenario: User info empty - First Name" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 33743
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: User info empty - First Name" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 14788
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mai 11, 2023 4:47:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+mai 11, 2023 8:19:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
 ]]></system-err>
   </testcase>
@@ -139,13 +368,13 @@ INFORMAÇÕES: Detected dialect: W3C
   <testcase name="When Click on checkout button" classname="Scenario: User info empty - First Name" time="0"/>
   <testcase name="And Click on continue button" classname="Scenario: User info empty - First Name" time="0"/>
   <testcase name="Then user should get error message &quot;Error: First Name is required&quot;" classname="Scenario: User info empty - First Name" time="0"/>
-  <testcase name="" classname="Scenario: User info empty - First Name" time="0.001"/>
-  <testcase name="Given User is logged in" classname="Scenario: User info empty - Last Name" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 12220
+  <testcase name="" classname="Scenario: User info empty - First Name" time="0"/>
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: User info empty - Last Name" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 32169
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mai 11, 2023 4:47:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+mai 11, 2023 8:19:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
 ]]></system-err>
   </testcase>
@@ -156,12 +385,12 @@ INFORMAÇÕES: Detected dialect: W3C
   <testcase name="And Click on continue button" classname="Scenario: User info empty - Last Name" time="0"/>
   <testcase name="Then user should get error message &quot;Error: Last Name is required&quot;" classname="Scenario: User info empty - Last Name" time="0"/>
   <testcase name="" classname="Scenario: User info empty - Last Name" time="0"/>
-  <testcase name="Given User is logged in" classname="Scenario: User info empty - Zip Postal" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 34930
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: User info empty - Zip Postal" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 37453
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mai 11, 2023 4:47:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+mai 11, 2023 8:19:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
 ]]></system-err>
   </testcase>
@@ -171,181 +400,53 @@ INFORMAÇÕES: Detected dialect: W3C
   <testcase name="And The user enters your first name" classname="Scenario: User info empty - Zip Postal" time="0"/>
   <testcase name="And The user enters your last name" classname="Scenario: User info empty - Zip Postal" time="0"/>
   <testcase name="And Click on continue button" classname="Scenario: User info empty - Zip Postal" time="0"/>
-  <testcase name="Then user should get error message &quot;Error: Postal Code is required&quot;" classname="Scenario: User info empty - Zip Postal" time="0"/>
-  <testcase name="" classname="Scenario: User info empty - Zip Postal" time="0"/>
-  <testcase name="Given User is logged in" classname="Scenario: User can cancel order" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 30153
+  <testcase name="Then user should get error message &quot;Error: Postal Code is required&quot;" classname="Scenario: User info empty - Zip Postal" time="0.001"/>
+  <testcase name="" classname="Scenario: User info empty - Zip Postal" time="0.001"/>
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: User can cancel order" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 42696
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mai 11, 2023 4:47:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+mai 11, 2023 8:19:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Given User is logged in" classname="Scenario: User can cancel order" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 6494
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: User can cancel order" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 9839
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mai 11, 2023 4:48:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+mai 11, 2023 8:20:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
 ]]></system-err>
   </testcase>
   <testcase name="And The user click to add some products to your cart" classname="Scenario: User can cancel order" time="0"/>
   <testcase name="And The user click to add some products to your cart" classname="Scenario: User can cancel order" time="0"/>
-  <testcase name="And The user click in cart icon" classname="Scenario: User can cancel order" time="0.001"/>
+  <testcase name="And The user click in cart icon" classname="Scenario: User can cancel order" time="0"/>
   <testcase name="And The user click in cart icon" classname="Scenario: User can cancel order" time="0"/>
   <testcase name="When Click on checkout button" classname="Scenario: User can cancel order" time="0"/>
   <testcase name="When Click on checkout button" classname="Scenario: User can cancel order" time="0"/>
   <testcase name="And Click on cancel button" classname="Scenario: User can cancel order" time="0"/>
   <testcase name="And Click on cancel button" classname="Scenario: User can cancel order" time="0"/>
-  <testcase name="Then The user see all products in the cart" classname="Scenario: User can cancel order" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="" classname="Scenario: User can cancel order" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="" classname="Scenario: User can cancel order" time="0.003"/>
+  <testcase name="Then The user see all products in the cart" classname="Scenario: User can cancel order" time="0"/>
+  <testcase name="" classname="Scenario: User can cancel order" time="0"/>
   <testcase name="" classname="Scenario: User can cancel order" time="0"/>
   <testcase name="Then The user can see the products page" classname="Scenario: User can cancel order" time="0"/>
-  <testcase name="Given User is logged in" classname="Scenario: More information about the product" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 28429
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: The user can see items total price" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 25284
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mai 11, 2023 4:47:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+mai 11, 2023 8:19:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="When The user click on some product" classname="Scenario: More information about the product" time="0"/>
-  <testcase name="Then The user can see the product info" classname="Scenario: More information about the product" time="0"/>
-  <testcase name="And check the product name" classname="Scenario: More information about the product" time="0"/>
-  <testcase name="And check the product price" classname="Scenario: More information about the product" time="0"/>
-  <testcase name="" classname="Scenario: More information about the product" time="0"/>
-  <testcase name="Given User is logged in" classname="Scenario: Add product to a cart" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 33691
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: The user can see items total price" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 1748
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mai 11, 2023 4:47:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="And The user click on some product" classname="Scenario: Add product to a cart" time="0"/>
-  <testcase name="When The user click to add the product to your cart" classname="Scenario: Add product to a cart" time="0"/>
-  <testcase name="And The user click to back the products page" classname="Scenario: Add product to a cart" time="0"/>
-  <testcase name="Then The user can see the products page" classname="Scenario: Add product to a cart" time="0"/>
-  <testcase name="And The user can see the current amount of products added in the cart icon" classname="Scenario: Add product to a cart" time="0"/>
-  <testcase name="And The user click to remove all products" classname="Scenario: Add product to a cart" time="0"/>
-  <testcase name="" classname="Scenario: Add product to a cart" time="0.001"/>
-  <testcase name="Given User is logged in" classname="Scenario: Add product in inventory page and remove from info page" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 40817
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mai 11, 2023 4:47:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="And The user click on add one product to cart" classname="Scenario: Add product in inventory page and remove from info page" time="0"/>
-  <testcase name="And The user click on the same product" classname="Scenario: Add product in inventory page and remove from info page" time="0"/>
-  <testcase name="When The user click to remove the product" classname="Scenario: Add product in inventory page and remove from info page" time="0"/>
-  <testcase name="Then The user can see the current amount of products added in the cart icon" classname="Scenario: Add product in inventory page and remove from info page" time="0"/>
-  <testcase name="" classname="Scenario: Add product in inventory page and remove from info page" time="0.001"/>
-  <testcase name="Given User is logged in" classname="Scenario: Back to product page" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 9273
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mai 11, 2023 4:47:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="And The user click on some product" classname="Scenario: Back to product page" time="0"/>
-  <testcase name="When The user click to back the products page" classname="Scenario: Back to product page" time="0"/>
-  <testcase name="Then The user can see the products page" classname="Scenario: Back to product page" time="0"/>
-  <testcase name="" classname="Scenario: Back to product page" time="0.001"/>
-  <testcase name="Given the user is on login page" classname="Scenario: Login success" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 31714
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mai 11, 2023 4:47:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="And the user enters valid username &quot;standard_user&quot;" classname="Scenario: Login success" time="0.001"/>
-  <testcase name="And the user enters valid password &quot;secret_sauce&quot;" classname="Scenario: Login success" time="0"/>
-  <testcase name="When click on login button" classname="Scenario: Login success" time="0"/>
-  <testcase name="Then the user should be redirected to the products page" classname="Scenario: Login success" time="0"/>
-  <testcase name="" classname="Scenario: Login success" time="0.001"/>
-  <testcase name="Given the user is on login page" classname="Scenario: Login with user info empty" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 12330
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mai 11, 2023 4:47:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="When click on login button" classname="Scenario: Login with user info empty" time="0"/>
-  <testcase name="Then user should get error message &quot;Epic sadface: Username is required&quot;" classname="Scenario: Login with user info empty" time="0"/>
-  <testcase name="" classname="Scenario: Login with user info empty" time="0"/>
-  <testcase name="Given the user is on login page" classname="Scenario: Login with username empty" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 45078
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mai 11, 2023 4:47:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="And the user enters valid password &quot;secret_sauce&quot;" classname="Scenario: Login with username empty" time="0"/>
-  <testcase name="When click on login button" classname="Scenario: Login with username empty" time="0"/>
-  <testcase name="Then user should get error message &quot;Epic sadface: Username is required&quot;" classname="Scenario: Login with username empty" time="0"/>
-  <testcase name="" classname="Scenario: Login with username empty" time="0"/>
-  <testcase name="Given the user is on login page" classname="Scenario: Login with password empty" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 46935
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mai 11, 2023 4:47:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="And the user enters valid username &quot;standard_user&quot;" classname="Scenario: Login with password empty" time="0"/>
-  <testcase name="When click on login button" classname="Scenario: Login with password empty" time="0"/>
-  <testcase name="Then user should get error message &quot;Epic sadface: Password is required&quot;" classname="Scenario: Login with password empty" time="0"/>
-  <testcase name="" classname="Scenario: Login with password empty" time="0"/>
-  <testcase name="Given the user is on login page" classname="Scenario: Login with invalid user info" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 34335
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mai 11, 2023 4:47:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="And the user enters invalid username &quot;Cris_user&quot;" classname="Scenario: Login with invalid user info" time="0"/>
-  <testcase name="And the user enters invalid password &quot;secret_password&quot;" classname="Scenario: Login with invalid user info" time="0"/>
-  <testcase name="When click on login button" classname="Scenario: Login with invalid user info" time="0"/>
-  <testcase name="Then user should get error message &quot;Epic sadface: Username and password do not match any user in this service&quot;" classname="Scenario: Login with invalid user info" time="0"/>
-  <testcase name="" classname="Scenario: Login with invalid user info" time="0.001"/>
-  <testcase name="Given User is logged in" classname="Scenario: The user can see items total price" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 10601
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mai 11, 2023 4:47:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="Given User is logged in" classname="Scenario: The user can see items total price" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 26177
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mai 11, 2023 4:47:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+mai 11, 2023 8:19:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
 ]]></system-err>
   </testcase>
@@ -366,15 +467,15 @@ INFORMAÇÕES: Detected dialect: W3C
   <testcase name="And User can see the purchase order" classname="Scenario: The user can see items total price" time="0"/>
   <testcase name="And User can see the purchase order" classname="Scenario: The user can see items total price" time="0"/>
   <testcase name="Then user can see the item total price" classname="Scenario: The user can see items total price" time="0"/>
-  <testcase name="" classname="Scenario: The user can see items total price" time="0.001"/>
+  <testcase name="" classname="Scenario: The user can see items total price" time="0"/>
   <testcase name="" classname="Scenario: The user can see items total price" time="0"/>
   <testcase name="Then user can see the total price" classname="Scenario: The user can see items total price" time="0"/>
-  <testcase name="Given User is logged in" classname="Scenario: The user can finish the order" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 10698
+  <testcase name="Given User is logged in &quot;standard_user&quot; and &quot;secret_sauce&quot;" classname="Scenario: The user can finish the order" time="0">
+    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 4632
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mai 11, 2023 4:48:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+mai 11, 2023 8:20:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
 ]]></system-err>
   </testcase>
@@ -389,118 +490,4 @@ INFORMAÇÕES: Detected dialect: W3C
   <testcase name="Then User can finished your order" classname="Scenario: The user can finish the order" time="0"/>
   <testcase name="And user should get success message &quot;Thank you for your order!&quot;" classname="Scenario: The user can finish the order" time="0"/>
   <testcase name="" classname="Scenario: The user can finish the order" time="0"/>
-  <testcase name="Given User is logged in" classname="Scenario: order display of products" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 1426
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mai 11, 2023 4:48:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="Given User is logged in" classname="Scenario: order display of products" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 24165
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mai 11, 2023 4:48:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="Given User is logged in" classname="Scenario: order display of products" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 11304
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mai 11, 2023 4:48:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="Given User is logged in" classname="Scenario: order display of products" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 40219
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mai 11, 2023 4:48:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="And The user can see the products page" classname="Scenario: order display of products" time="0"/>
-  <testcase name="And The user can see the products page" classname="Scenario: order display of products" time="0"/>
-  <testcase name="And The user can see the products page" classname="Scenario: order display of products" time="0"/>
-  <testcase name="And The user can see the products page" classname="Scenario: order display of products" time="0"/>
-  <testcase name="When The user click to sort products by Name ascending" classname="Scenario: order display of products" time="0"/>
-  <testcase name="Then See the products sorted name ascending" classname="Scenario: order display of products" time="0"/>
-  <testcase name="" classname="Scenario: order display of products" time="0"/>
-  <testcase name="" classname="Scenario: order display of products" time="0.001"/>
-  <testcase name="" classname="Scenario: order display of products" time="0"/>
-  <testcase name="" classname="Scenario: order display of products" time="0"/>
-  <testcase name="When The user click to sort products by Name descending" classname="Scenario: order display of products" time="0"/>
-  <testcase name="Then See the products sorted name descending" classname="Scenario: order display of products" time="0"/>
-  <testcase name="When The user click to sort products by Price ascending" classname="Scenario: order display of products" time="0"/>
-  <testcase name="Then See the products sorted price ascending" classname="Scenario: order display of products" time="0"/>
-  <testcase name="When The user click to sort products by Price descending" classname="Scenario: order display of products" time="0"/>
-  <testcase name="Then See the products sorted price descending" classname="Scenario: order display of products" time="0"/>
-  <testcase name="Given User is logged in" classname="Scenario: Add products to cart" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 12458
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mai 11, 2023 4:48:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="When The user click to add some products to your cart" classname="Scenario: Add products to cart" time="0"/>
-  <testcase name="Then The user can see the current amount of products added in the cart icon" classname="Scenario: Add products to cart" time="0"/>
-  <testcase name="" classname="Scenario: Add products to cart" time="0"/>
-  <testcase name="Given User is logged in" classname="Scenario: Add all products to cart" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 23239
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mai 11, 2023 4:48:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="When The user click to add all products to your cart" classname="Scenario: Add all products to cart" time="0"/>
-  <testcase name="Then The user can see the current amount of products added in the cart icon" classname="Scenario: Add all products to cart" time="0"/>
-  <testcase name="" classname="Scenario: Add all products to cart" time="0"/>
-  <testcase name="Given User is logged in" classname="Scenario: Remove some products to cart" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 36561
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mai 11, 2023 4:48:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="And The user click to add some products to your cart" classname="Scenario: Remove some products to cart" time="0"/>
-  <testcase name="And The user can see the button to remove the added product" classname="Scenario: Remove some products to cart" time="0"/>
-  <testcase name="And The user can see the amount of products added in the cart icon" classname="Scenario: Remove some products to cart" time="0"/>
-  <testcase name="When The user click to remove some products" classname="Scenario: Remove some products to cart" time="0.009">
-    <error message="bound must be positive" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: bound must be positive
-]]></error>
-  </testcase>
-  <testcase name="" classname="Scenario: Remove some products to cart" time="0.01">
-    <error message="bound must be positive" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: bound must be positive
-]]></error>
-  </testcase>
-  <testcase name="Then The user can see the current amount of products added in the cart icon" classname="Scenario: Remove some products to cart" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Given User is logged in" classname="Scenario: Remove All products to cart" time="0">
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 32994
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mai 11, 2023 4:48:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="And The user click to add some products to your cart" classname="Scenario: Remove All products to cart" time="0.001"/>
-  <testcase name="And The user can see the button to remove the added product" classname="Scenario: Remove All products to cart" time="0"/>
-  <testcase name="And The user can see the amount of products added in the cart icon" classname="Scenario: Remove All products to cart" time="0"/>
-  <testcase name="When The user click to remove all products" classname="Scenario: Remove All products to cart" time="0"/>
-  <testcase name="Then The user can see the current amount of products added in the cart icon" classname="Scenario: Remove All products to cart" time="0"/>
-  <testcase name="" classname="Scenario: Remove All products to cart" time="0"/>
 </testsuite>

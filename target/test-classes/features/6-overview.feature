@@ -5,7 +5,7 @@ Feature: The user can see the purchase order
 
   @overview-itemTotal
   Scenario: The user can see items total price
-    Given User is logged in
+    Given User is logged in "standard_user" and "secret_sauce"
     And The user click to add some products to your cart
     And The user click in cart icon
     When Click on checkout button
@@ -18,7 +18,7 @@ Feature: The user can see the purchase order
 
   @overview-totalPrice
   Scenario: The user can see items total price
-    Given User is logged in
+    Given User is logged in "standard_user" and "secret_sauce"
     And The user click to add some products to your cart
     And The user click in cart icon
     When Click on checkout button
@@ -31,7 +31,7 @@ Feature: The user can see the purchase order
 
   @overview-cancel
   Scenario: User can cancel order
-    Given User is logged in
+    Given User is logged in "standard_user" and "secret_sauce"
     And The user click to add some products to your cart
     And The user click in cart icon
     When Click on checkout button
@@ -40,7 +40,7 @@ Feature: The user can see the purchase order
 
   @overview-finish
   Scenario: The user can finish the order
-    Given User is logged in
+    Given User is logged in "standard_user" and "secret_sauce"
     And The user click to add some products to your cart
     And The user click in cart icon
     When Click on checkout button
