@@ -39,6 +39,11 @@ public class Checkout_steps extends RunCucumberTest {
         checkoutPage.clickOnCancelButton();
     }
 
+    @Then("^The user see all products in the cart$")
+    public void The_user_see_all_products_in_the_cart() {
+        checkoutPage.verifyCartPage();
+    }
+
     @Then("^User can see the purchase order$")
     public void user_can_see_the_purchase_order() {
         overviewPage.overviewDisplayed();

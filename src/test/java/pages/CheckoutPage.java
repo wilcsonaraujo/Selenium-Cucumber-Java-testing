@@ -10,6 +10,7 @@ public class CheckoutPage extends RunCucumberTest {
     private By lastName_field = By.id("last-name");
     private By postalCode_field = By.id("postal-code");
     private By cancelButton = By.id("cancel");
+    private String checkoutButton = "(//button[contains(text(),'Checkout')])";
 
 
     public void clickOnContinueButton() {
@@ -30,6 +31,10 @@ public class CheckoutPage extends RunCucumberTest {
 
     public void clickOnCancelButton() {
         getDriver().findElement(cancelButton).click();
+    }
+
+    public void verifyCartPage(){
+        getDriver().findElement(By.xpath(checkoutButton)).isDisplayed();
     }
 
 }

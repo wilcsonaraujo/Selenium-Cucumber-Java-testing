@@ -40,7 +40,12 @@ public class Utils extends RunCucumberTest {
 
     public static Integer getRandomNumber(int size) {
         Random random = new Random();
-        return random.nextInt(size);
+        int num = random.nextInt(size);
+        if(num == 0){
+            return 1;
+        }else {
+            return num;
+        }
     }
 
 }

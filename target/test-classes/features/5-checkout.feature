@@ -5,7 +5,7 @@ Feature: The user can buy the products
 
   @checkout-addUserInfo
   Scenario: Input user info
-    Given User is logged in
+    Given User is logged in "standard_user" and "secret_sauce"
     And The user click to add some products to your cart
     And The user click in cart icon
     When Click on checkout button
@@ -17,7 +17,7 @@ Feature: The user can buy the products
 
   @checkout-continueFirstNameEmpty
   Scenario: User info empty - First Name
-    Given User is logged in
+    Given User is logged in "standard_user" and "secret_sauce"
     And The user click to add some products to your cart
     And The user click in cart icon
     When Click on checkout button
@@ -26,7 +26,7 @@ Feature: The user can buy the products
 
   @checkout-continueLastNameEmpty
   Scenario: User info empty - Last Name
-    Given User is logged in
+    Given User is logged in "standard_user" and "secret_sauce"
     And The user click to add some products to your cart
     And The user click in cart icon
     When Click on checkout button
@@ -36,7 +36,7 @@ Feature: The user can buy the products
 
   @checkout-continueZipEmpty
   Scenario: User info empty - Zip Postal
-    Given User is logged in
+    Given User is logged in "standard_user" and "secret_sauce"
     And The user click to add some products to your cart
     And The user click in cart icon
     When Click on checkout button
@@ -47,7 +47,7 @@ Feature: The user can buy the products
 
   @checkout-cancel
   Scenario: User can cancel order
-    Given User is logged in
+    Given User is logged in "standard_user" and "secret_sauce"
     And The user click to add some products to your cart
     And The user click in cart icon
     When Click on checkout button

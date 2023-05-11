@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import runner.RunCucumberTest;
 import support.Utils;
 
+import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +19,8 @@ public class OverviewPage extends RunCucumberTest {
     private By totalPrice_Label = By.xpath("//div[contains(text(),'Total: $')]");
     private String overviewTitleXpath = "//span[contains(text(),'Checkout: Overview')]";
     private By successMessage_Label = By.className("complete-header");
+
+    BigDecimal bigDecimal;
 
 
     public void overviewDisplayed() {
@@ -43,8 +46,8 @@ public class OverviewPage extends RunCucumberTest {
         }
         Double expected = Double.valueOf(getDriver().findElement(totalPrice_Label).getText().replace("Total: $", ""));
         Double tax = Double.valueOf(getDriver().findElement(tax_Label).getText().replace("Tax: $", ""));
-        Double actual = sumItemPriceList + tax;
-        Assert.assertEquals(expected, actual);
+        String actual = new DecimalFormat("##.##").format(sumItemPriceList + tax).replace(",", ".");
+        Assert.assertEquals(expected, Double.valueOf(actual));
     }
 
     public void finishOrder() {
