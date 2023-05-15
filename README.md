@@ -10,15 +10,20 @@ The "Selenium-Cucumber-Java" project is a repository on GitHub that contains an 
 The project utilizes the following technologies:
 
 **Selenium:** A widely used test automation tool for testing web applications. It allows interaction with page elements, simulates user actions, and verifies application behavior.
+
 **Cucumber:** A behavior-driven development (BDD) testing framework that enables writing tests in natural language. It helps maintain collaboration between developers, testers, and project stakeholders.
+
 **Java:** A popular and widely used programming language for application development. Java is a common choice for test automation due to its robustness and the vast amount of available libraries.
 
 ## Features
 The project showcases examples of test automation for a fictional web application. The implemented features include:
 
 **Login:** Tests to verify the login functionality of the application, including both successful and failed scenarios.
+
 **Products:** Tests to validate the functionalities related to products, ensuring that the results are displayed correctly.
+
 **Shopping Cart:** Tests to verify the addition and removal of items from the shopping cart, ensuring that the total is calculated accurately.
+
 **Checkout:** Tests to simulate the completion of a purchase, including filling out the payment form and verifying the order summary.
 
 ![Functions](/target/functions.jpeg)
