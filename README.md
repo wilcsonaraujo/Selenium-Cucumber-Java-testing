@@ -36,12 +36,17 @@ The project is organized as follows:
 **src/test/resources:** Cucumber resources required for test execution, such as features and test scenarios.
 
 ## How to Use
+
 To use the project, follow the instructions below:
 
 Clone the GitHub repository to your local machine.
+
 Import the project into your preferred Java IDE.
+
 Make sure you have the correct dependencies set up, such as Selenium WebDriver and Cucumber.
+
 Run the automated tests from the execution class "RunCucumberTest" in the runner package.
+
 
 ### Reporting
 To generate reports, follow the instructions below:
